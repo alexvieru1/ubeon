@@ -1,101 +1,163 @@
+import Navbar from "@/components/navbar";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardTitle,
+} from "@/components/ui/card";
+import Footer from "@/components/ui/footer";
+import { MailIcon, MapPinIcon, PhoneCallIcon, PrinterIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <Navbar />
+      <div className="pt-16 flex flex-col justify-center items-center">
+        <Card className="mt-8 w-[90%] xl:w-[60%]">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+            Despre noi
+          </CardTitle>
+          <CardDescription className="p-4">
+            O scurta descriere despre istoria noastra
+          </CardDescription>
+          <CardContent className="md:py-4">
+            <div className="flex flex-col md:flex-row gap-3">
+              <p className="max-w-[650px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae accusamus ea, dolores obcaecati facere dolorum ipsa
+                a. Quod, labore voluptates consectetur vel cupiditate delectus.
+                Vel iure beatae neque veniam accusamus. Necessitatibus quam
+                voluptas esse dolorum magni! Quaerat quidem deleniti molestias
+                officia beatae quisquam earum placeat facilis. Consequuntur
+                perferendis vel totam. Nostrum ratione vel quia voluptate quos
+                debitis error, quas corrupti! Iusto consequatur ut voluptates
+                error quibusdam dolor temporibus magnam voluptatum explicabo
+                quas nihil hic, praesentium aliquid eos sequi earum impedit
+                repellat? Iusto ducimus voluptatem officiis quaerat, itaque est
+                magnam temporibus. Deleniti similique voluptatem modi, eaque in
+                cupiditate, quidem necessitatibus eligendi perferendis nostrum
+                eos! Nulla et, animi perspiciatis consequuntur, eum fugiat
+                impedit possimus a non modi facilis quibusdam nihil placeat
+                ipsum. Tenetur, dicta magnam voluptates voluptatum dolore
+                mollitia perferendis alias, amet cumque voluptatem labore porro
+                blanditiis, vel atque temporibus sequi illum nobis voluptate
+                provident excepturi nihil tempore ut sint autem! Libero?
+              </p>
+              <Image
+                className="rounded-lg"
+                src="/images/1.png"
+                width={500}
+                height={500}
+                alt="img"
+              />
+            </div>
+          </CardContent>
+          <CardFooter className="flex justify-center">
+            <Link href="despre-noi">
+              <Button className="bg-green-600">Mai multe</Button>
+            </Link>
+          </CardFooter>
+        </Card>
+        <div className="flex flex-col md:flex-row w-full px-4 xl:w-[60%] gap-4">
+          <Card className="mt-8 w-full xl:w-[60%]">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+              Servicii
+            </CardTitle>
+            <CardDescription className="px-4">
+              Serviciile oferite de noi
+            </CardDescription>
+            <CardContent className="md:py-4">
+              <p className="max-w-[400px]">your EPO</p>
+              <p className="max-w-[400px]">your T&D</p>
+              <p className="max-w-[400px]">your Consultant & Advisor</p>
+            </CardContent>
+            <CardFooter className="flex justify-start">
+              <Link href="servicii">
+                <Button className="bg-green-600">Detalii</Button>
+              </Link>
+            </CardFooter>
+          </Card>
+          <Card className="mt-8 w-full xl:w-[60%]">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+              Contact
+            </CardTitle>
+            <CardContent className="md:py-4">
+              <div className="flex flex-row my-3">
+                <MapPinIcon className="w-6 h-6 text-green-600" />
+                <p className="ml-2">Sector 4, Bucuresti</p>
+              </div>
+              <div className="flex flex-row my-3">
+                <PhoneCallIcon className="w-6 h-6 text-green-600" />
+                <p className="ml-2">021.330.30.12</p>
+              </div>
+              <div className="flex flex-row my-3">
+                <PrinterIcon className="w-6 h-6 text-green-600" />
+                <p className="ml-2"> 021.331.05.44</p>
+              </div>
+              <div className="flex flex-row my-3">
+                <MailIcon className="w-6 h-6 text-green-600" />
+                <p className="ml-2">info@ubeon.ro</p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <p className="my-4 px-4 xl:max-w-[60%]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+          voluptates nesciunt ullam, natus voluptatum obcaecati optio. Fugiat
+          modi tempore nostrum odit commodi numquam qui repudiandae possimus, in
+          iure consectetur cumque. Officia, accusantium ipsum. Ipsa iste sint
+          nobis quam et sapiente? Asperiores totam commodi sapiente itaque
+          corrupti ducimus doloribus, ex vitae fugiat laborum, accusantium
+          voluptatibus unde voluptas quam saepe tempore. Natus! Maiores animi id
+          hic iure consectetur, quis, voluptates modi omnis laboriosam est ipsa
+          cupiditate laborum dolor sunt quam placeat obcaecati architecto
+          deleniti at nemo perspiciatis qui quidem cum voluptatum. Facilis? Quae
+          ad ipsum, atque dolore voluptate, ullam, provident fuga consectetur
+          non et velit similique! Accusantium hic ipsam sapiente laboriosam, ab
+          esse corporis repellendus, sunt ut, id modi magni aliquam corrupti!
+        </p>
+        <div className="my-4 px-4 flex justify-center text-center text-3xl font-semibold">
+          <p>ubeon este mereu solutia, nu problema!</p>
+        </div>
+        <Card className="mt-8 w-[90%] xl:w-[60%]">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+            Parteneri
+          </CardTitle>
+          <CardContent className="md:py-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae accusamus ea, dolores obcaecati facere dolorum ipsa a.
+              Quod, labore voluptates consectetur vel cupiditate delectus. Vel
+              iure beatae neque veniam accusamus. Necessitatibus quam voluptas
+              esse dolorum magni! Quaerat quidem deleniti molestias officia
+              beatae quisquam earum placeat facilis. Consequuntur perferendis
+              vel totam. Nostrum ratione vel quia voluptate quos debitis error,
+              quas corrupti! Iusto consequatur ut voluptates error quibusdam
+              dolor temporibus magnam voluptatum explicabo quas nihil hic,
+              praesentium aliquid eos sequi earum impedit repellat? Iusto
+              ducimus voluptatem officiis quaerat, itaque est magnam temporibus.
+              Deleniti similique voluptatem modi, eaque in cupiditate, quidem
+              necessitatibus eligendi perferendis nostrum eos! Nulla et, animi
+              perspiciatis consequuntur, eum fugiat impedit possimus a non modi
+              facilis quibusdam nihil placeat ipsum. Tenetur, dicta magnam
+              voluptates voluptatum dolore mollitia perferendis alias, amet
+              cumque voluptatem labore porro blanditiis, vel atque temporibus
+              sequi illum nobis voluptate provident excepturi nihil tempore ut
+              sint autem! Libero?
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-end">
+            <Link href="despre-noi">
+              <Button className="bg-green-600">Toti partenerii</Button>
+            </Link>
+          </CardFooter>
+        </Card>
+      </div>
+      <Footer />
     </div>
   );
 }
