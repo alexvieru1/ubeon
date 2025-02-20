@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { FlipWords } from "./ui/flip-words";
+import { ModeToggle } from "./mode-toggle";
 
 const navLinks = [
   { name: "Despre noi", path: "/despre" },
@@ -18,10 +19,10 @@ const Navbar = () => {
   const words = [" ", "yo"];
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50">
+    <nav className="bg-white dark:bg-black shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo / Brand Name with fade animation */}
+          {/* Logo / Brand Name with flip effect */}
           <div className="flex-shrink-0">
             <Link
               href="/"
@@ -29,9 +30,12 @@ const Navbar = () => {
               aria-label="you be on"
               className="text-3xl font-sans font-semibold"
             >
-              <FlipWords className="text-green-600 mr-[-16]" words={words} />
+              <FlipWords
+                className="text-green-600 mr-[-16] dark:text-green-600"
+                words={words}
+              />
               <span className="text-green-600">u</span>
-              <span className="text-gray-600">be</span>
+              <span className="text-gray-600 dark:text-gray-300">be</span>
               <span className="text-green-600">on</span>
             </Link>
           </div>
@@ -41,18 +45,25 @@ const Navbar = () => {
               <div key={link.name} className="cursor-pointer">
                 <Link
                   href={link.path}
-                  className="text-gray-700 hover:text-green-600 transition duration-300 font-medium"
+                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 transition duration-300 font-medium"
                 >
                   {link.name}
                 </Link>
               </div>
             ))}
           </div>
+          {/* Mode Toggle on larger screens */}
+          <div className="hidden lg:block">
+            <ModeToggle />
+          </div>
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="flex md:hidden">
+            <div >
+                <ModeToggle />
+            </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:bg-gray-200 focus:outline-none"
+              className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -67,7 +78,7 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden overflow-hidden bg-white"
+            className="md:hidden overflow-hidden bg-white dark:bg-gray-800"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
@@ -75,7 +86,7 @@ const Navbar = () => {
                   <Link
                     href={link.path}
                     onClick={() => setIsOpen(false)}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     {link.name}
                   </Link>
