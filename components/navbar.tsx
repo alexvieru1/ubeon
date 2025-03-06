@@ -7,7 +7,7 @@ import { FlipWords } from "./ui/flip-words";
 import { ModeToggle } from "./mode-toggle";
 
 const navLinks = [
-  { name: "Despre noi", path: "/despre" },
+  { name: "Despre noi", path: "/despre-noi" },
   { name: "Servicii", path: "/servicii" },
   { name: "Parteneri", path: "/parteneri" },
   { name: "Proiecte", path: "/proiecte" },
@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
+              className="ml-2 p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
