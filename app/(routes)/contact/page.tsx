@@ -1,4 +1,5 @@
 "use client";
+import { DraftForm } from "@/components/draft-form";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/ui/footer";
 import Link from "next/link";
@@ -18,12 +19,13 @@ const Contact = () => {
                 +40 213303012
               </Link>
             </p>
-            <p className="text-xl">
+            <p className="text-xl mb-8">
               Email:{" "}
               <a href="mailto:contact@ubeon.ro" className="text-green-600">
                 contact@ubeon.ro
               </a>
             </p>
+            <DraftForm />
           </div>
           <div className="w-full overflow-hidden">
             <iframe
