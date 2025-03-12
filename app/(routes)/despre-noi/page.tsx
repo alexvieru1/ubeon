@@ -18,7 +18,7 @@ const page = () => {
       <Navbar />
       <div className="pt-16 flex flex-col justify-center items-center">
         <Card className="mt-8 w-[90%] xl:w-[60%]">
-          <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
             Hai sa ne cunoastem mai bine
           </CardTitle>
           <CardDescription className="p-4">

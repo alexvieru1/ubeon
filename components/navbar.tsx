@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
+// import { ModeToggle } from "./mode-toggle";
 import { RotateWords } from "./ui/rotate-words";
 
 const navLinks = [
@@ -22,9 +22,9 @@ const Navbar = () => {
   return (
     <nav className="bg-white dark:bg-black shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between lg:justify-center h-16 items-center">
           {/* Logo / Brand Name with flip effect */}
-          <div className="flex-shrink-0 w-[220px]">
+          <div className="flex-shrink-0 w-[220px] lg:mr-4">
             <Link
               href="/"
               title="you be on"
@@ -40,7 +40,7 @@ const Navbar = () => {
               <div key={link.name} className="cursor-pointer">
                 <Link
                   href={link.path}
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-500 transition duration-300 font-medium"
+                  className="text-gray-700 dark:text-gray-300 hover:text-[#8cc63e] transition duration-300 font-medium"
                 >
                   {link.name}
                 </Link>
@@ -48,14 +48,14 @@ const Navbar = () => {
             ))}
           </div>
           {/* Mode Toggle on larger screens */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <ModeToggle />
-          </div>
+          </div> */}
           {/* Mobile Menu Button */}
           <div className="flex md:hidden">
-            <div >
+            {/* <div >
                 <ModeToggle />
-            </div>
+            </div> */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="ml-2 p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"

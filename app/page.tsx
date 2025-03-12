@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <div className="pt-16 flex flex-col justify-center items-center">
         <Card className="mt-8 w-[90%] xl:w-[60%]">
-          <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
             Despre noi
           </CardTitle>
           <CardDescription className="p-4">
@@ -92,13 +92,13 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-center">
             <Link href="despre-noi">
-              <Button className="bg-green-500">Mai multe</Button>
+              <Button className="bg-[#8cc63e]">Mai multe</Button>
             </Link>
           </CardFooter>
         </Card>
         <div className="flex flex-col md:flex-row w-full px-4 xl:w-[60%] gap-4">
           <Card className="mt-8 w-full xl:w-[60%]">
-            <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
               Servicii
             </CardTitle>
             <CardDescription className="px-4">
@@ -150,25 +150,25 @@ export default function Home() {
             </CardContent>
             <CardFooter className="flex justify-start">
               <Link href="servicii">
-                <Button className="bg-green-500">Detalii</Button>
+                <Button className="bg-[#8cc63e]">Detalii</Button>
               </Link>
             </CardFooter>
           </Card>
           <Card className="mt-8 w-full xl:w-[60%]">
-            <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
               Contact
             </CardTitle>
             <CardContent className="md:py-4">
               <div className="flex flex-row my-3">
-                <MapPinIcon className="w-6 h-6 text-green-500" />
+                <MapPinIcon className="w-6 h-6 text-[#8cc63e]" />
                 <p className="ml-2">Sector 4, Bucuresti</p>
               </div>
               <div className="flex flex-row my-3">
-                <PhoneCallIcon className="w-6 h-6 text-green-500" />
+                <PhoneCallIcon className="w-6 h-6 text-[#8cc63e]" />
                 <p className="ml-2">021.330.30.12</p>
               </div>
               <div className="flex flex-row my-3">
-                <MailIcon className="w-6 h-6 text-green-500" />
+                <MailIcon className="w-6 h-6 text-[#8cc63e]" />
                 <p className="ml-2">contact@ubeon.ro</p>
               </div>
             </CardContent>
@@ -193,7 +193,7 @@ export default function Home() {
           <p>ubeon este mereu solutia, nu problema!</p>
         </div>
         <Card className="mt-8 w-[90%] xl:w-[60%]">
-          <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
             Parteneri
           </CardTitle>
           <CardContent className="md:py-4">
@@ -221,7 +221,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-end">
             <Link href="despre-noi">
-              <Button className="bg-green-500">Toti partenerii</Button>
+              <Button className="bg-[#8cc63e]">Toti partenerii</Button>
             </Link>
           </CardFooter>
         </Card>

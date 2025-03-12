@@ -40,9 +40,9 @@ export function RotateWords({
         >
           {words[index] === "you be on" ? (
             <>
-              <span className="text-green-500">you</span>{" "}
-              <span className="text-gray-500">be</span>{" "}
-              <span className="text-green-500">on</span>
+              <span className="text-[#8cc63e]">you</span>{" "}
+              <span className="text-[#6b7071]">be</span>{" "}
+              <span className="text-[#8cc63e]">on</span>
               {/* <Image className="p-6" src="/images/green.png" width={300} height={100} alt="logo"/> */}
 
             </>

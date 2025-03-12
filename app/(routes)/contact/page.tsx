@@ -15,13 +15,13 @@ const Contact = () => {
           <div className="flex flex-col items-center">
             <p className="text-xl">
               Suna-ne:{" "}
-              <Link href="tel:+40213303012" className="text-green-500">
+              <Link href="tel:+40213303012" className="text-[#8cc63e]">
                 +40 213303012
               </Link>
             </p>
             <p className="text-xl mb-8">
               Email:{" "}
-              <a href="mailto:contact@ubeon.ro" className="text-green-500">
+              <a href="mailto:contact@ubeon.ro" className="text-[#8cc63e]">
                 contact@ubeon.ro
               </a>
             </p>
