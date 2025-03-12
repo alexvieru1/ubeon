@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/ui/footer";
+import Link from "next/link";
 import React from "react";
 
 const Contact = () => {
@@ -13,14 +14,14 @@ const Contact = () => {
           <div className="flex flex-col items-center">
             <p className="text-xl">
               Suna-ne:{" "}
-              <a href="tel:+40213303012" className="text-green-600">
+              <Link href="tel:+40213303012" className="text-green-600">
                 +40 213303012
-              </a>
+              </Link>
             </p>
             <p className="text-xl">
               Email:{" "}
-              <a href="mailto:info@ubeon.ro" className="text-green-600">
-                info@ubeon.ro
+              <a href="mailto:contact@ubeon.ro" className="text-green-600">
+                contact@ubeon.ro
               </a>
             </p>
           </div>

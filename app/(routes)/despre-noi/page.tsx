@@ -25,28 +25,52 @@ const page = () => {
             Suntem aici pentru tine
           </CardDescription>
           <CardContent className="md:py-4">
-            <div className="flex flex-col md:flex-row gap-3">
-              <p className="max-w-[650px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae accusamus ea, dolores obcaecati facere dolorum ipsa
-                a. Quod, labore voluptates consectetur vel cupiditate delectus.
-                Vel iure beatae neque veniam accusamus. Necessitatibus quam
-                voluptas esse dolorum magni! Quaerat quidem deleniti molestias
-                officia beatae quisquam earum placeat facilis. Consequuntur
-                perferendis vel totam. Nostrum ratione vel quia voluptate quos
-                debitis error, quas corrupti! Iusto consequatur ut voluptates
-                error quibusdam dolor temporibus magnam voluptatum explicabo
-                quas nihil hic, praesentium aliquid eos sequi earum impedit
-                repellat? Iusto ducimus voluptatem officiis quaerat, itaque est
-                magnam temporibus. Deleniti similique voluptatem modi, eaque in
-                cupiditate, quidem necessitatibus eligendi perferendis nostrum
-                eos! Nulla et, animi perspiciatis consequuntur, eum fugiat
-                impedit possimus a non modi facilis quibusdam nihil placeat
-                ipsum. Tenetur, dicta magnam voluptates voluptatum dolore
-                mollitia perferendis alias, amet cumque voluptatem labore porro
-                blanditiis, vel atque temporibus sequi illum nobis voluptate
-                provident excepturi nihil tempore ut sint autem! Libero?
-              </p>
+            <div className="flex flex-col lg:flex-row gap-3">
+              <div>
+                <p className="max-w-[650px]">
+                  Suntem de 20 de ani pe piata de servicii B2B si B2C in Romania
+                  si niciodata mai aproape de ceea ce suntem astazi.
+                </p>
+                <p className="max-w-[650px] mt-4">
+                  De-a lungul celor două decenii de activitate, am reușit să
+                  construim relații durabile și să realizăm parteneriate de
+                  succes, bazate pe încredere și colaborare. Suntem recunoscuți
+                  pentru abordarea noastră proactivă și pentru capacitatea de a
+                  transforma provocările în oportunități.
+                </p>
+                <p className="max-w-[650px] mt-4">
+                  Fondata in 2006 Ubeon a evoluat constant, iar Astazi suntem
+                </p>
+                <p className="max-w-[650px] text-center">
+                  <strong>
+                    Experinta, Cunoastere, Dorinta, Echilibru si Lucrul Bine
+                    Facut
+                  </strong>
+                </p>
+                <p className="max-w-[650px] mt-4">
+                  Experienta a adus cu sine noutatea si indarjirea, Cunoasterea
+                  a aratat drumul, Dorinta a pastrat deschisa calea, Echilibrul
+                  ne-a ajutat sa nu renuntam, iar Lucrul bine facut a fost
+                  motivatia cea mai puternica pentru a continua.
+                </p>
+                <p className="max-w-[650px] mt-8">
+                  Acestea sunt si valorile pe care le punem in fata celor care
+                  ne sunt clienti si aceasta este promisiunea pe care o facem
+                  celor care vor sa ne incredinteze proiectele lor. Misiunea
+                  noastră este să oferim soluții personalizate și eficiente,
+                  adaptate nevoilor specifice ale fiecărui client sub deviza{" "}
+                </p>
+                <p className="max-w-[650px] text-center">
+                  <strong>
+                    Pentru Orice Nevoi, Înainte de Oricine suna-ne pe noi!
+                  </strong>
+                </p>
+                <p className="max-w-[650px] mt-4">
+                  Acceseaza unul dintre centrele noastre de excelenta si
+                  descopera cum poti sa faci din Your EPO, Your T&D si Your C&A
+                  partenerul de succes care ai nevoie.
+                </p>
+              </div>
               <Image
                 className="rounded-lg"
                 src="/images/logo.jpg"
@@ -56,10 +80,23 @@ const page = () => {
               />
             </div>
           </CardContent>
-          <CardFooter className="flex justify-center">
-            <Link href="tel:+40213303012">
-              <Button className="bg-green-600">Hai sa vorbim</Button>
-            </Link>
+          <CardFooter className="flex flex-col justify-center">
+            <div className="mb-4">
+              <Link href="/servicii">
+                <Button className="bg-green-600">Servicii</Button>
+              </Link>
+            </div>
+            <div className="flex flex-row gap-6">
+              <Link href="/servicii/epo">
+                <Button className="bg-red-600">EPO</Button>
+              </Link>{" "}
+              <Link href="/servicii/t&d">
+                <Button className="bg-orange-600">T&D</Button>
+              </Link>{" "}
+              <Link href="/servicii/c&a">
+                <Button className="bg-yellow-500">C&A</Button>
+              </Link>
+            </div>
           </CardFooter>
         </Card>
       </div>

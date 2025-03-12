@@ -3,8 +3,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { FlipWords } from "./ui/flip-words";
 import { ModeToggle } from "./mode-toggle";
+import { RotateWords } from "./ui/rotate-words";
 
 const navLinks = [
   { name: "Despre noi", path: "/despre-noi" },
@@ -16,27 +16,21 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const words = [" ", "yo"];
+  const words = ["you be on", "ubeon"];
 
   return (
     <nav className="bg-white dark:bg-black shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo / Brand Name with flip effect */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-[220px]">
             <Link
               href="/"
               title="you be on"
               aria-label="you be on"
               className="text-3xl font-sans font-semibold"
             >
-              <FlipWords
-                className="text-green-600 mr-[-16] dark:text-green-600"
-                words={words}
-              />
-              <span className="text-green-600">u</span>
-              <span className="text-gray-600 dark:text-gray-300">be</span>
-              <span className="text-green-600">on</span>
+              <RotateWords text="" words={words}/>
             </Link>
           </div>
           {/* Desktop Navigation */}

@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -8,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Footer from "@/components/ui/footer";
-import { MailIcon, MapPinIcon, PhoneCallIcon, PrinterIcon } from "lucide-react";
+import { MailIcon, MapPinIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,35 +26,68 @@ export default function Home() {
             O scurta descriere despre istoria noastra
           </CardDescription>
           <CardContent className="md:py-4">
-            <div className="flex flex-col md:flex-row gap-3">
-              <p className="max-w-[650px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae accusamus ea, dolores obcaecati facere dolorum ipsa
-                a. Quod, labore voluptates consectetur vel cupiditate delectus.
-                Vel iure beatae neque veniam accusamus. Necessitatibus quam
-                voluptas esse dolorum magni! Quaerat quidem deleniti molestias
-                officia beatae quisquam earum placeat facilis. Consequuntur
-                perferendis vel totam. Nostrum ratione vel quia voluptate quos
-                debitis error, quas corrupti! Iusto consequatur ut voluptates
-                error quibusdam dolor temporibus magnam voluptatum explicabo
-                quas nihil hic, praesentium aliquid eos sequi earum impedit
-                repellat? Iusto ducimus voluptatem officiis quaerat, itaque est
-                magnam temporibus. Deleniti similique voluptatem modi, eaque in
-                cupiditate, quidem necessitatibus eligendi perferendis nostrum
-                eos! Nulla et, animi perspiciatis consequuntur, eum fugiat
-                impedit possimus a non modi facilis quibusdam nihil placeat
-                ipsum. Tenetur, dicta magnam voluptates voluptatum dolore
-                mollitia perferendis alias, amet cumque voluptatem labore porro
-                blanditiis, vel atque temporibus sequi illum nobis voluptate
-                provident excepturi nihil tempore ut sint autem! Libero?
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-col md:flex-row gap-3">
+                <div className="max-w-[650px]">
+                  <p>
+                    <strong>UBEON</strong> este o companie românească cu o
+                    experiență de peste 20 de ani pe piața de servicii B2B și
+                    B2C, dedicată excelenței și inovării. Fondată în 2005, UBEON
+                    a evoluat constant, devenind un partener de încredere pentru
+                    clienți din diverse industrii.
+                  </p>
+                  <p className="mt-2">
+                    Misiunea noastră este să oferim soluții personalizate și
+                    eficiente, adaptate nevoilor specifice ale fiecărui client.
+                    Ne mândrim cu echipa noastră de experți, care combină
+                    know-how-ul tehnic cu pasiunea pentru ceea ce facem,
+                    asigurând succesul proiectelor implementate.
+                  </p>
+                  <p className="mt-2">Valori fundamentale:</p>
+                  <ul>
+                    <li>
+                      • <strong>Integritate</strong>: Respectăm promisiunile și
+                      ne angajăm să menținem cele mai înalte standarde etice în
+                      toate relațiile noastre.
+                    </li>
+                    <li>
+                      • <strong>Inovație</strong>: Ne aflăm într-o continuă
+                      căutare de noi soluții și tehnologii care să aducă valoare
+                      adăugată clienților noștri.
+                    </li>
+                    <li>
+                      • <strong>Excelență</strong>: Ne străduim să depășim
+                      așteptările, oferind servicii de cea mai înaltă calitate.
+                    </li>
+                  </ul>
+                  <p className="mt-2">
+                    Serviciile noastre acoperă o gamă largă de domenii, de la
+                    consultanță strategică și managementul proiectelor, până la
+                    marketing digital și dezvoltare de software. Avem
+                    capacitatea de a gestiona proiecte complexe și de a oferi
+                    soluții integrate care să contribuie la creșterea și
+                    dezvoltarea afacerilor clienților noștri.
+                  </p>
+                  <p className="mt-2">
+                    De-a lungul celor două decenii de activitate, am reușit să
+                    construim relații durabile și să realizăm parteneriate de
+                    succes, bazate pe încredere și colaborare. Suntem
+                    recunoscuți pentru abordarea noastră proactivă și pentru
+                    capacitatea de a transforma provocările în oportunități.
+                  </p>
+                </div>
+                <Image
+                  className="rounded-lg"
+                  src="/images/1.png"
+                  width={500}
+                  height={500}
+                  alt="img"
+                />
+              </div>
+              <p className="text-center">
+                <strong>UBEON</strong> – Excelență în servicii, pasiune pentru
+                performanță.
               </p>
-              <Image
-                className="rounded-lg"
-                src="/images/1.png"
-                width={500}
-                height={500}
-                alt="img"
-              />
             </div>
           </CardContent>
           <CardFooter className="flex justify-center">
@@ -71,9 +105,42 @@ export default function Home() {
               Serviciile oferite de noi
             </CardDescription>
             <CardContent className="md:py-4">
-              <p className="max-w-[400px]">your EPO</p>
-              <p className="max-w-[400px]">your T&D</p>
-              <p className="max-w-[400px]">your Consultant & Advisor</p>
+              <div className="flex items-center max-w-[400px] mt-2">
+                <p className="font-semibold">Your</p>{" "}
+                <Badge className="rounded-full bg-red-600 ml-2">EPO</Badge>
+                <Link href="tel:+40213303012">
+                <Button
+                    className="ml-32 lg:ml-60 hover:bg-red-600 hover:text-white"
+                    variant="outline"
+                  >
+                    Get fast access
+                  </Button>
+                </Link>
+              </div>
+              <div className="flex items-center max-w-[400px] mt-2">
+                <p className="font-semibold">Your</p>{" "}
+                <Badge className="rounded-full bg-orange-600 ml-2">T&D</Badge>
+                <Link href="tel:+40213303012">
+                  <Button
+                    className="ml-32 lg:ml-60 hover:bg-orange-600 hover:text-white"
+                    variant="outline"
+                  >
+                    Get fast access
+                  </Button>
+                </Link>
+              </div>
+              <div className="flex items-center max-w-[400px] mt-2">
+                <p className="font-semibold">Your</p>{" "}
+                <Badge className="rounded-full bg-yellow-500 ml-2">C&A</Badge>
+                <Link href="tel:+40213303012">
+                  <Button
+                    className="ml-32 lg:ml-60 hover:bg-yellow-500 hover:text-white"
+                    variant="outline"
+                  >
+                    Get fast access
+                  </Button>
+                </Link>
+              </div>
             </CardContent>
             <CardFooter className="flex justify-start">
               <Link href="servicii">
@@ -95,12 +162,8 @@ export default function Home() {
                 <p className="ml-2">021.330.30.12</p>
               </div>
               <div className="flex flex-row my-3">
-                <PrinterIcon className="w-6 h-6 text-green-600" />
-                <p className="ml-2"> 021.331.05.44</p>
-              </div>
-              <div className="flex flex-row my-3">
                 <MailIcon className="w-6 h-6 text-green-600" />
-                <p className="ml-2">info@ubeon.ro</p>
+                <p className="ml-2">contact@ubeon.ro</p>
               </div>
             </CardContent>
           </Card>

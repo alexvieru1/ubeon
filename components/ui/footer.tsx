@@ -4,7 +4,6 @@ import {
   MailIcon,
   MapPinIcon,
   PhoneCallIcon,
-  PrinterIcon,
 } from "lucide-react";
 
 const Footer = () => {
@@ -89,12 +88,8 @@ const Footer = () => {
                   <span>021.330.30.12</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <PrinterIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                  <span>021.331.05.44</span>
-                </li>
-                <li className="flex items-center gap-2">
                   <MailIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                  <span>info@ubeon.ro</span>
+                  <span>contact@ubeon.ro</span>
                 </li>
               </ul>
             </div>
