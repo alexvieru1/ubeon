@@ -7,6 +7,7 @@ import { ModeToggle } from "./mode-toggle";
 import { RotateWords } from "./ui/rotate-words";
 
 const navLinks = [
+  { name: "Acasa", path: "/" },
   { name: "Despre noi", path: "/despre-noi" },
   { name: "Servicii", path: "/servicii" },
   { name: "Parteneri", path: "/parteneri" },
@@ -39,7 +40,7 @@ const Navbar = () => {
               <div key={link.name} className="cursor-pointer">
                 <Link
                   href={link.path}
-                  className="text-gray-700 dark:text-gray-300 hover:text-green-600 transition duration-300 font-medium"
+                  className="text-gray-700 dark:text-gray-300 hover:text-green-500 transition duration-300 font-medium"
                 >
                   {link.name}
                 </Link>

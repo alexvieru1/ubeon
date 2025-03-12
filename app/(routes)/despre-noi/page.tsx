@@ -18,7 +18,7 @@ const page = () => {
       <Navbar />
       <div className="pt-16 flex flex-col justify-center items-center">
         <Card className="mt-8 w-[90%] xl:w-[60%]">
-          <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
             Hai sa ne cunoastem mai bine
           </CardTitle>
           <CardDescription className="p-4">
@@ -83,7 +83,7 @@ const page = () => {
           <CardFooter className="flex flex-col justify-center">
             <div className="mb-4">
               <Link href="/servicii">
-                <Button className="bg-green-600">Servicii</Button>
+                <Button className="bg-500">Servicii</Button>
               </Link>
             </div>
             <div className="flex flex-row gap-6">
@@ -94,7 +94,7 @@ const page = () => {
                 <Button className="bg-orange-600">T&D</Button>
               </Link>{" "}
               <Link href="/servicii/c&a">
-                <Button className="bg-yellow-500">C&A</Button>
+                <Button className="bg-blue-500">C&A</Button>
               </Link>
             </div>
           </CardFooter>

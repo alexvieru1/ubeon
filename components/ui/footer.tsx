@@ -19,9 +19,9 @@ const Footer = () => {
               aria-label="you be on"
               className="text-3xl font-sans font-semibold"
             >
-              <span className="text-green-600">u</span>
+              <span className="text-green-500">u</span>
               <span className="text-gray-600 dark:text-gray-300">be</span>
-              <span className="text-green-600">on</span>
+              <span className="text-green-500">on</span>
             </Link>
             <p className="mt-4 text-sm">
               © {new Date().getFullYear()} ubeon. All rights reserved.
@@ -36,7 +36,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/despre"
-                    className="hover:text-green-600 dark:hover:text-green-400 transition duration-300"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition duration-300"
                   >
                     Despre noi
                   </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/servicii"
-                    className="hover:text-green-600 dark:hover:text-green-400 transition duration-300"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition duration-300"
                   >
                     Servicii
                   </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/parteneri"
-                    className="hover:text-green-600 dark:hover:text-green-400 transition duration-300"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition duration-300"
                   >
                     Parteneri
                   </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/proiecte"
-                    className="hover:text-green-600 dark:hover:text-green-400 transition duration-300"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition duration-300"
                   >
                     Proiecte
                   </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/contact"
-                    className="hover:text-green-600 dark:hover:text-green-400 transition duration-300"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition duration-300"
                   >
                     Contact
                   </Link>
@@ -80,15 +80,15 @@ const Footer = () => {
               <h4 className="font-medium mb-2">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2">
-                  <MapPinIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  <MapPinIcon className="w-4 h-4 text-green-500 dark:text-green-400" />
                   <span>Sector 4, București</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <PhoneCallIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  <PhoneCallIcon className="w-4 h-4 text-green-500 dark:text-green-400" />
                   <span>021.330.30.12</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <MailIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  <MailIcon className="w-4 h-4 text-green-500 dark:text-green-400" />
                   <span>contact@ubeon.ro</span>
                 </li>
               </ul>

@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <div className="pt-16 flex flex-col justify-center items-center">
         <Card className="mt-8 w-[90%] xl:w-[60%]">
-          <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
             Despre noi
           </CardTitle>
           <CardDescription className="p-4">
@@ -92,13 +92,13 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-center">
             <Link href="despre-noi">
-              <Button className="bg-green-600">Mai multe</Button>
+              <Button className="bg-green-500">Mai multe</Button>
             </Link>
           </CardFooter>
         </Card>
         <div className="flex flex-col md:flex-row w-full px-4 xl:w-[60%] gap-4">
           <Card className="mt-8 w-full xl:w-[60%]">
-            <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
               Servicii
             </CardTitle>
             <CardDescription className="px-4">
@@ -136,11 +136,11 @@ export default function Home() {
               <div className="flex items-center justify-between max-w-[400px] mt-2">
                 <div className="flex flex-row items-center">
                   <p className="font-semibold">Your</p>{" "}
-                  <Badge className="rounded-full bg-yellow-500 ml-2">C&A</Badge>
+                  <Badge className="rounded-full bg-blue-500 ml-2">C&A</Badge>
                 </div>
                 <Link href="tel:+40213303012">
                   <Button
-                    className="ml-32 lg:ml-60 hover:bg-yellow-500 hover:text-white"
+                    className="ml-32 lg:ml-60 hover:bg-blue-500 hover:text-white"
                     variant="outline"
                   >
                     Get fast access
@@ -150,25 +150,25 @@ export default function Home() {
             </CardContent>
             <CardFooter className="flex justify-start">
               <Link href="servicii">
-                <Button className="bg-green-600">Detalii</Button>
+                <Button className="bg-green-500">Detalii</Button>
               </Link>
             </CardFooter>
           </Card>
           <Card className="mt-8 w-full xl:w-[60%]">
-            <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
               Contact
             </CardTitle>
             <CardContent className="md:py-4">
               <div className="flex flex-row my-3">
-                <MapPinIcon className="w-6 h-6 text-green-600" />
+                <MapPinIcon className="w-6 h-6 text-green-500" />
                 <p className="ml-2">Sector 4, Bucuresti</p>
               </div>
               <div className="flex flex-row my-3">
-                <PhoneCallIcon className="w-6 h-6 text-green-600" />
+                <PhoneCallIcon className="w-6 h-6 text-green-500" />
                 <p className="ml-2">021.330.30.12</p>
               </div>
               <div className="flex flex-row my-3">
-                <MailIcon className="w-6 h-6 text-green-600" />
+                <MailIcon className="w-6 h-6 text-green-500" />
                 <p className="ml-2">contact@ubeon.ro</p>
               </div>
             </CardContent>
@@ -193,7 +193,7 @@ export default function Home() {
           <p>ubeon este mereu solutia, nu problema!</p>
         </div>
         <Card className="mt-8 w-[90%] xl:w-[60%]">
-          <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+          <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
             Parteneri
           </CardTitle>
           <CardContent className="md:py-4">
@@ -221,7 +221,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-end">
             <Link href="despre-noi">
-              <Button className="bg-green-600">Toti partenerii</Button>
+              <Button className="bg-green-500">Toti partenerii</Button>
             </Link>
           </CardFooter>
         </Card>

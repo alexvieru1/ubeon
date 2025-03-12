@@ -20,7 +20,7 @@ const page = () => {
       <div className="pt-16 flex flex-col justify-center items-center p-4">
         <div className="max-w-4xl w-full">
           <Card className="mt-8">
-            <CardTitle className="p-4 text-3xl text-yellow-500">
+            <CardTitle className="p-4 text-3xl text-blue-500">
               Your C&amp;A
             </CardTitle>
             <CardDescription className="p-4 text-xl">
@@ -31,7 +31,7 @@ const page = () => {
                 <div className="flex-shrink-0">
                   <Image
                     className="rounded-lg"
-                    src="/images/yellow.png"
+                    src="/images/blue.png"
                     alt="Your C&A"
                     width={500}
                     height={300}
@@ -75,7 +75,7 @@ const page = () => {
             </CardContent>
             <CardFooter className="flex justify-center p-4">
               <Link href="tel:+40213303012">
-                <Button className="bg-yellow-500 text-white">
+                <Button className="bg-blue-500 text-white">
                   Contacteaza-ne
                 </Button>
               </Link>

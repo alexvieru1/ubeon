@@ -1,6 +1,7 @@
 "use client"
 import * as React from "react"
 import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
 
 interface RotateWordsProps {
   text?: string
@@ -39,15 +40,18 @@ export function RotateWords({
         >
           {words[index] === "you be on" ? (
             <>
-              <span className="text-green-600">you</span>{" "}
+              <span className="text-green-500">you</span>{" "}
               <span className="text-gray-500">be</span>{" "}
-              <span className="text-green-600">on</span>
+              <span className="text-green-500">on</span>
+              {/* <Image className="p-6" src="/images/green.png" width={300} height={100} alt="logo"/> */}
+
             </>
           ) : (
             <>
-              <span className="text-green-600">u</span>
+            <Image className="p-6" src="/images/green.png" width={300} height={100} alt="logo"/>
+              {/* <span className="text-green-600">u</span>
               <span className="text-gray-500">be</span>
-              <span className="text-green-600">on</span>
+              <span className="text-green-600">on</span> */}
             </>
           )}
         </motion.p>

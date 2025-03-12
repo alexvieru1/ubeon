@@ -52,7 +52,7 @@ const page = () => {
           {partners.map((partner, index) => (
             <div key={index} className="w-full flex justify-center">
               <Card className="mt-8 w-[90%] xl:w-[60%]">
-                <CardTitle className="p-4 text-xl xl:text-2xl text-green-600">
+                <CardTitle className="p-4 text-xl xl:text-2xl text-green-500">
                   {partner.title}
                 </CardTitle>
                 <CardContent className="p-4">

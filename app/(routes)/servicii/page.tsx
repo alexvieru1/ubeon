@@ -48,9 +48,9 @@ const page = () => {
       title: "Your C&A",
       want: "C&A",
       description: "Consultant & Advisor",
-      src: "/images/yellow.png",
-      textColor: "text-yellow-500",
-      btnColor: "bg-yellow-500",
+      src: "/images/blue.png",
+      textColor: "text-blue-500",
+      btnColor: "bg-blue-500",
       href: "/servicii/c&a",
       details: [
         "Adica acum dupa 20 de ani ce sa facem cu tot ce am acumulat ? Toata experinta si expertiza noastra poate si trebuie sa fie transferata acolo unde trebuie. ",
