@@ -106,10 +106,12 @@ export default function Home() {
             </CardDescription>
             <CardContent className="md:py-4">
               <div className="flex items-center max-w-[400px] mt-2">
-                <p className="font-semibold">Your</p>{" "}
-                <Badge className="rounded-full bg-red-600 ml-2">EPO</Badge>
+                <div className="flex flex-row items-center">
+                  <p className="font-semibold">Your</p>{" "}
+                  <Badge className="rounded-full bg-red-600 ml-2">EPO</Badge>
+                </div>
                 <Link href="tel:+40213303012">
-                <Button
+                  <Button
                     className="ml-32 lg:ml-60 hover:bg-red-600 hover:text-white"
                     variant="outline"
                   >
@@ -118,8 +120,10 @@ export default function Home() {
                 </Link>
               </div>
               <div className="flex items-center max-w-[400px] mt-2">
-                <p className="font-semibold">Your</p>{" "}
-                <Badge className="rounded-full bg-orange-600 ml-2">T&D</Badge>
+                <div className="flex flex-row items-center">
+                  <p className="font-semibold">Your</p>{" "}
+                  <Badge className="rounded-full bg-orange-600 ml-2">T&D</Badge>
+                </div>
                 <Link href="tel:+40213303012">
                   <Button
                     className="ml-32 lg:ml-60 hover:bg-orange-600 hover:text-white"
@@ -129,9 +133,11 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              <div className="flex items-center max-w-[400px] mt-2">
-                <p className="font-semibold">Your</p>{" "}
-                <Badge className="rounded-full bg-yellow-500 ml-2">C&A</Badge>
+              <div className="flex items-center justify-between max-w-[400px] mt-2">
+                <div className="flex flex-row items-center">
+                  <p className="font-semibold">Your</p>{" "}
+                  <Badge className="rounded-full bg-yellow-500 ml-2">C&A</Badge>
+                </div>
                 <Link href="tel:+40213303012">
                   <Button
                     className="ml-32 lg:ml-60 hover:bg-yellow-500 hover:text-white"
