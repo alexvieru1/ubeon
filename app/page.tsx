@@ -14,6 +14,32 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const services = [
+    {
+      id: 1,
+      title: "EPO",
+      src: "/images/red.png",
+      btnColor: "bg-red-500",
+      href: "https://wa.me/40722567212",
+      redirect: "/servicii/epo"
+    },
+    {
+      id: 2,
+      title: "T&D",
+      src: "/images/orange.png",
+      btnColor: "bg-orange-500",
+      href: "https://wa.me/40722567212",
+      redirect: "/servicii/t&d"
+    },
+    {
+      id: 3,
+      title: "C&A",
+      src: "/images/blue.png",
+      btnColor: "bg-blue-500",
+      href: "https://wa.me/40722567212",
+      redirect: "/servicii/c&a"
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -98,76 +124,55 @@ export default function Home() {
         </Card>
         <div className="flex flex-col md:flex-row w-full px-4 xl:w-[60%] gap-4">
           <Card className="mt-8 w-full xl:w-[60%]">
-            <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
+            <CardTitle className="p-4 text-xl text-center xl:text-2xl text-[#8cc63e]">
               Servicii
             </CardTitle>
-            <CardDescription className="px-4">
+            <CardDescription className="px-4 text-center">
               Serviciile oferite de noi
             </CardDescription>
             <CardContent className="md:py-4">
-              <div className="flex items-center max-w-[400px] mt-2">
-                <div className="flex flex-row items-center">
-                  <p className="font-semibold">Your</p>{" "}
-                  <Badge className="rounded-full bg-red-600 ml-2">EPO</Badge>
+              {services.map((service) => (
+                <div key={service.id} className="my-2 flex justify-center items-center">
+                  <Link href={service.redirect}>
+                    <Image
+                      src={service.src}
+                      width={100}
+                      height={20}
+                      alt={service.title}
+                    />
+                    <div className="flex ml-10">
+                      <p className="font-mono">Your </p>
+                      <Badge className={`${service.btnColor} hover:bg-gray-500`}>
+                        {service.title}
+                      </Badge>
+                    </div>
+                  </Link>
+                  <Link href={service.href} target="blank">
+                    <Button className={`${service.btnColor} ml-6 hover:bg-gray-500`}>Get fast access</Button>
+                  </Link>
                 </div>
-                <Link href="tel:+40213303012">
-                  <Button
-                    className="ml-32 lg:ml-60 hover:bg-red-600 hover:text-white"
-                    variant="outline"
-                  >
-                    Get fast access
-                  </Button>
-                </Link>
-              </div>
-              <div className="flex items-center max-w-[400px] mt-2">
-                <div className="flex flex-row items-center">
-                  <p className="font-semibold">Your</p>{" "}
-                  <Badge className="rounded-full bg-orange-600 ml-2">T&D</Badge>
-                </div>
-                <Link href="tel:+40213303012">
-                  <Button
-                    className="ml-32 lg:ml-60 hover:bg-orange-600 hover:text-white"
-                    variant="outline"
-                  >
-                    Get fast access
-                  </Button>
-                </Link>
-              </div>
-              <div className="flex items-center justify-between max-w-[400px] mt-2">
-                <div className="flex flex-row items-center">
-                  <p className="font-semibold">Your</p>{" "}
-                  <Badge className="rounded-full bg-blue-500 ml-2">C&A</Badge>
-                </div>
-                <Link href="tel:+40213303012">
-                  <Button
-                    className="ml-32 lg:ml-60 hover:bg-blue-500 hover:text-white"
-                    variant="outline"
-                  >
-                    Get fast access
-                  </Button>
-                </Link>
-              </div>
+              ))}
             </CardContent>
-            <CardFooter className="flex justify-start">
+            {/* <CardFooter className="flex justify-start">
               <Link href="servicii">
                 <Button className="bg-[#8cc63e]">Detalii</Button>
               </Link>
-            </CardFooter>
+            </CardFooter> */}
           </Card>
           <Card className="mt-8 w-full xl:w-[60%]">
-            <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
+            <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e] text-center">
               Contact
             </CardTitle>
             <CardContent className="md:py-4">
-              <div className="flex flex-row my-3">
+              <div className="flex flex-row my-3 justify-center items-center">
                 <MapPinIcon className="w-6 h-6 text-[#8cc63e]" />
                 <p className="ml-2">Sector 4, Bucuresti</p>
               </div>
-              <div className="flex flex-row my-3">
+              <div className="flex flex-row my-3 justify-center items-center">
                 <PhoneCallIcon className="w-6 h-6 text-[#8cc63e]" />
                 <p className="ml-2">021.330.30.12</p>
               </div>
-              <div className="flex flex-row my-3">
+              <div className="flex flex-row my-3 justify-center items-center">
                 <MailIcon className="w-6 h-6 text-[#8cc63e]" />
                 <p className="ml-2">contact@ubeon.ro</p>
               </div>

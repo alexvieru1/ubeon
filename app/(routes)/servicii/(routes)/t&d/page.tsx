@@ -75,7 +75,7 @@ const page = () => {
               </div>
             </CardContent>
             <CardFooter className="flex justify-center p-4">
-              <Link href="tel:+40213303012">
+              <Link href="https://wa.me/40722567212" target="blank">
                 <Button className="bg-orange-500 text-white">
                   Contacteaza-ne
                 </Button>
