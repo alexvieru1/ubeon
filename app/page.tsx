@@ -141,11 +141,8 @@ export default function Home() {
         <div className="flex flex-col md:flex-row w-full px-4 xl:w-[60%] gap-4">
           <Card className="mt-8 w-full xl:w-[60%]">
             <CardTitle className="p-4 text-xl text-center xl:text-2xl text-[#8cc63e]">
-              Servicii
+              Excellent services{" "}
             </CardTitle>
-            <CardDescription className="px-4 text-center">
-              Excellent services
-            </CardDescription>
             <CardContent className="md:py-4">
               {services.map((service) => (
                 <div
@@ -186,7 +183,7 @@ export default function Home() {
           </Card>
           <Card className="mt-8 w-full xl:w-[60%]">
             <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e] text-center">
-              Contact
+              Contact us
             </CardTitle>
             <CardContent className="md:py-4">
               <div className="flex flex-row my-3 justify-center items-center">
@@ -208,7 +205,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
-        <p className="my-4 px-4 xl:max-w-[60%]">
+        {/* <p className="my-4 px-4 xl:max-w-[60%]">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
           voluptates nesciunt ullam, natus voluptatum obcaecati optio. Fugiat
           modi tempore nostrum odit commodi numquam qui repudiandae possimus, in
@@ -222,7 +219,7 @@ export default function Home() {
           ad ipsum, atque dolore voluptate, ullam, provident fuga consectetur
           non et velit similique! Accusantium hic ipsam sapiente laboriosam, ab
           esse corporis repellendus, sunt ut, id modi magni aliquam corrupti!
-        </p>
+        </p> */}
         <div className="my-4 px-4 flex justify-center text-center text-3xl font-semibold">
           <p>ubeon este mereu solutia, nu problema!</p>
         </div>
@@ -255,7 +252,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-end">
             <Link href="despre-noi">
-              <Button className="bg-[#8cc63e]">Toti partenerii</Button>
+              <Button className="bg-[#8cc63e]">All partners</Button>
             </Link>
           </CardFooter>
         </Card>

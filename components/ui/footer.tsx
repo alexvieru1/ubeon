@@ -1,10 +1,6 @@
 "use client";
 import Link from "next/link";
-import {
-  MailIcon,
-  MapPinIcon,
-  PhoneCallIcon,
-} from "lucide-react";
+import { FacebookIcon, InstagramIcon, MailIcon, MapPinIcon, PhoneCallIcon, TwitterIcon, XIcon } from "lucide-react";
 import { RotateWords } from "./rotate-words";
 
 const Footer = () => {
@@ -20,17 +16,17 @@ const Footer = () => {
               aria-label="you be on"
               className="text-3xl font-sans font-semibold"
             >
-              <RotateWords text="" words={["you be on", "ubeon"]}/>
+              <RotateWords text="" words={["you be on", "ubeon"]} />
             </Link>
             {/* <p className="mt-4 text-sm">
               © {new Date().getFullYear()} ubeon. All rights reserved.
             </p> */}
           </div>
           {/* Navigation & Contact */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Navigation Links */}
             <div>
-              <h4 className="font-medium mb-2">Navigare</h4>
+              <h4 className="font-medium mb-2">Content</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
@@ -76,7 +72,7 @@ const Footer = () => {
             </div>
             {/* Contact Info */}
             <div>
-              <h4 className="font-medium mb-2">Contact</h4>
+              <h4 className="font-medium mb-2">Contact us</h4>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2">
                   <MapPinIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
@@ -84,11 +80,32 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <PhoneCallIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
-                  <span>021.330.30.12</span>
+                  <span>+40 21 330 30 12</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <PhoneCallIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
+                  <span> +40 7272 UBEON</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <MailIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
                   <span>contact@ubeon.ro</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Socials</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center gap-2">
+                  <InstagramIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
+                  <span>ubeon</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <FacebookIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
+                  <span>UBEON</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <TwitterIcon className="w-4 h-4 text-[#8cc63e] dark:text-green-400" />
+                  <span>ubeon</span>
                 </li>
               </ul>
             </div>
