@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FacebookIcon, InstagramIcon, MailIcon, MapPinIcon, PhoneCallIcon, TwitterIcon, XIcon } from "lucide-react";
+import { FacebookIcon, InstagramIcon, MailIcon, MapPinIcon, PhoneCallIcon, TwitterIcon } from "lucide-react";
 import { RotateWords } from "./rotate-words";
 
 const Footer = () => {
