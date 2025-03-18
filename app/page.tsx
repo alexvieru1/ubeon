@@ -22,7 +22,7 @@ export default function Home() {
       src: "/images/red.png",
       btnColor: "bg-red-500",
       href: "https://wa.me/40722567212",
-      redirect: "/servicii/epo"
+      redirect: "/servicii/epo",
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export default function Home() {
       src: "/images/orange.png",
       btnColor: "bg-orange-500",
       href: "https://wa.me/40722567212",
-      redirect: "/servicii/t&d"
+      redirect: "/servicii/t&d",
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export default function Home() {
       src: "/images/blue.png",
       btnColor: "bg-blue-500",
       href: "https://wa.me/40722567212",
-      redirect: "/servicii/c&a"
+      redirect: "/servicii/c&a",
     },
   ];
   return (
@@ -88,7 +88,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <AspectRatio ratio={4/1.5}>
+                <AspectRatio ratio={4 / 1.5}>
                   <Image
                     className="rounded-lg"
                     src="/images/1.png"
@@ -99,7 +99,7 @@ export default function Home() {
                 </AspectRatio>
               </div>
               <div className="flex flex-col md:flex-row gap-3 mt-56 md:mt-0">
-                <AspectRatio ratio={4/1.5}>
+                <AspectRatio ratio={4 / 1.5}>
                   <Image
                     className="rounded-lg"
                     src="/images/1.png"
@@ -144,11 +144,14 @@ export default function Home() {
               Servicii
             </CardTitle>
             <CardDescription className="px-4 text-center">
-              Serviciile oferite de noi
+              Excellent services
             </CardDescription>
             <CardContent className="md:py-4">
               {services.map((service) => (
-                <div key={service.id} className="my-2 flex justify-center items-center">
+                <div
+                  key={service.id}
+                  className="my-2 flex justify-center items-center"
+                >
                   <Link href="/servicii">
                     <Image
                       src={service.src}
@@ -158,13 +161,19 @@ export default function Home() {
                     />
                     <div className="flex ml-10">
                       <p className="font-mono">Your </p>
-                      <Badge className={`${service.btnColor} hover:bg-gray-500`}>
+                      <Badge
+                        className={`${service.btnColor} hover:bg-gray-500`}
+                      >
                         {service.title}
                       </Badge>
                     </div>
                   </Link>
                   <Link href={service.href} target="blank">
-                    <Button className={`${service.btnColor} ml-6 hover:bg-gray-500`}>Get fast access</Button>
+                    <Button
+                      className={`${service.btnColor} ml-6 hover:bg-gray-500`}
+                    >
+                      Get fast access
+                    </Button>
                   </Link>
                 </div>
               ))}
@@ -186,7 +195,11 @@ export default function Home() {
               </div>
               <div className="flex flex-row my-3 justify-center items-center">
                 <PhoneCallIcon className="w-6 h-6 text-[#8cc63e]" />
-                <p className="ml-2">021.330.30.12</p>
+                <p className="ml-2">+40 21 330 30 12</p>
+              </div>
+              <div className="flex flex-row my-3 justify-center items-center">
+                <PhoneCallIcon className="w-6 h-6 text-[#8cc63e]" />
+                <p className="ml-2"> +40 7272 UBEON</p>
               </div>
               <div className="flex flex-row my-3 justify-center items-center">
                 <MailIcon className="w-6 h-6 text-[#8cc63e]" />
