@@ -25,7 +25,7 @@ export function RotateWords({
   React.useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [words.length]);
 
@@ -46,12 +46,14 @@ export function RotateWords({
                 text="you"
                 leftSide={true}
                 className="text-[#8cc63e] text-4xl"
+                delay={0}
               />{" "}
-              <BlurIn className="text-[#6b7071] mx-2 text-4xl">be</BlurIn>{" "}
+              <BlurIn className="text-[#6b7071] mx-2 text-4xl" delay={2}>be</BlurIn>{" "}
               <GradualSpacing
                 text="on"
                 leftSide={false}
                 className="text-[#8cc63e] text-4xl"
+                delay={4}
               />{" "}
               {/* <span className="text-[#8cc63e]">you</span>{" "}
               <span className="text-[#6b7071]">be</span>{" "}

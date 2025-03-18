@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -51,9 +52,9 @@ export default function Home() {
           <CardDescription className="p-4">
             O scurta descriere despre istoria noastra
           </CardDescription>
-          <CardContent className="md:py-4">
-            <div className="flex flex-col gap-3">
-              <div className="flex flex-col md:flex-row gap-3">
+          <CardContent className="">
+            <div className="flex flex-col">
+              <div className="flex flex-col md:flex-row">
                 <div className="max-w-[650px]">
                   <p>
                     <strong>UBEON</strong> este o companie românească cu o
@@ -86,6 +87,28 @@ export default function Home() {
                       așteptările, oferind servicii de cea mai înaltă calitate.
                     </li>
                   </ul>
+                </div>
+                <AspectRatio ratio={4/1.5}>
+                  <Image
+                    className="rounded-lg"
+                    src="/images/1.png"
+                    width={500}
+                    height={500}
+                    alt="img"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="flex flex-col md:flex-row gap-3">
+                <AspectRatio ratio={4/1.5}>
+                  <Image
+                    className="rounded-lg"
+                    src="/images/1.png"
+                    width={500}
+                    height={500}
+                    alt="img"
+                  />
+                </AspectRatio>
+                <div className="max-w-[650px]">
                   <p className="mt-2">
                     Serviciile noastre acoperă o gamă largă de domenii, de la
                     consultanță strategică și managementul proiectelor, până la
@@ -102,13 +125,6 @@ export default function Home() {
                     capacitatea de a transforma provocările în oportunități.
                   </p>
                 </div>
-                <Image
-                  className="rounded-lg"
-                  src="/images/1.png"
-                  width={500}
-                  height={500}
-                  alt="img"
-                />
               </div>
               <p className="text-center">
                 <strong>UBEON</strong> – Excelență în servicii, pasiune pentru
