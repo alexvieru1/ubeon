@@ -149,7 +149,7 @@ export default function Home() {
             <CardContent className="md:py-4">
               {services.map((service) => (
                 <div key={service.id} className="my-2 flex justify-center items-center">
-                  <Link href={service.redirect}>
+                  <Link href="/servicii">
                     <Image
                       src={service.src}
                       width={100}

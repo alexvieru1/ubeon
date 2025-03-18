@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import {
@@ -61,48 +62,56 @@ const page = () => {
       ],
     },
   ];
+  const handleFastAccessClick = () => {
+    window.open("https://wa.me/40722567212", "_blank");
+  };
   return (
     <div>
-    <Navbar />
-    <div className="pt-16 flex flex-col items-center overflow-hidden w-full">
-      {/* Grid container that stretches items vertically */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 w-full max-w-[90%] items-stretch">
-        {services.map((srv, index) => (
-          <Card key={index} className="flex flex-col h-full">
-            {/* Card Header */}
-            <CardTitle className={`p-4 text-xl xl:text-2xl ${srv.textColor}`}>
-              {srv.title}
-            </CardTitle>
-            <CardDescription className="p-4">
-              {srv.description}
-            </CardDescription>
-            {/* Main Content (grows to fill available space) */}
-            <CardContent className="flex-1 flex flex-col gap-3 p-4">
-              <Image
-                className="rounded-lg"
-                src={srv.src}
-                width={500}
-                height={100}
-                alt="img"
-              />
-              {srv.details.map((detail, i) => (
-                <p key={i} className="max-w-[650px]">
-                  {detail}
-                </p>
-              ))}
-            </CardContent>
-            {/* Footer pinned at the bottom */}
-            <CardFooter className="p-4 flex justify-center">
-              <Link href={srv.href}>
-                <Button className={srv.btnColor}>Detalii {srv.want}</Button>
-              </Link>
-            </CardFooter>
-          </Card>
-        ))}
+      <Navbar />
+      <div className="pt-16 flex flex-col items-center overflow-hidden w-full">
+        {/* Grid container that stretches items vertically */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 w-full max-w-[90%] items-stretch">
+          {services.map((srv, index) => (
+            <Link key={index} href={srv.href}>
+              <Card className="flex flex-col h-full">
+                {/* Card Header */}
+                <CardTitle
+                  className={`p-4 text-xl xl:text-2xl ${srv.textColor}`}
+                >
+                  {srv.title}
+                </CardTitle>
+                <CardDescription className="p-4">
+                  {srv.description}
+                </CardDescription>
+                {/* Main Content (grows to fill available space) */}
+                <CardContent className="flex-1 flex flex-col gap-3 p-4">
+                  <Image
+                    className="rounded-lg"
+                    src={srv.src}
+                    width={500}
+                    height={100}
+                    alt="img"
+                  />
+                  {srv.details.map((detail, i) => (
+                    <p key={i} className="max-w-[650px]">
+                      {detail}
+                    </p>
+                  ))}
+                </CardContent>
+                {/* Footer pinned at the bottom */}
+                <CardFooter className="p-4 flex gap-3 justify-center">
+                  <Button className={srv.btnColor}>
+                    More about {srv.want}
+                  </Button>
+                  <Button className={srv.btnColor} onClick={handleFastAccessClick}>Get Fast Access</Button>
+                </CardFooter>
+              </Card>
+            </Link>
+          ))}
+        </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
   );
 };
 
