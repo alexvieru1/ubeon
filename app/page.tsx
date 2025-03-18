@@ -98,7 +98,7 @@ export default function Home() {
                   />
                 </AspectRatio>
               </div>
-              <div className="flex flex-col md:flex-row gap-3">
+              <div className="flex flex-col md:flex-row gap-3 mt-56 md:mt-0">
                 <AspectRatio ratio={4/1.5}>
                   <Image
                     className="rounded-lg"
@@ -108,7 +108,7 @@ export default function Home() {
                     alt="img"
                   />
                 </AspectRatio>
-                <div className="max-w-[650px]">
+                <div className="max-w-[650px] mt-44 md:mt-0">
                   <p className="mt-2">
                     Serviciile noastre acoperă o gamă largă de domenii, de la
                     consultanță strategică și managementul proiectelor, până la
