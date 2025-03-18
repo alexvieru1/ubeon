@@ -68,10 +68,13 @@ const page = () => {
                 </div>
               </div>
             </CardContent>
-            <CardFooter className="flex justify-center p-4">
+            <CardFooter className="flex justify-center p-4 gap-4">
+              <Link href="/contact">
+                <Button className="bg-red-500 text-white">Contact us</Button>
+              </Link>
               <Link href="https://wa.me/40722567212" target="blank">
                 <Button className="bg-red-500 text-white">
-                  Contacteaza-ne
+                  Get Fast Access
                 </Button>
               </Link>
             </CardFooter>
