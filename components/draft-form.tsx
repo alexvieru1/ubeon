@@ -53,7 +53,7 @@ export function DraftForm() {
           action={action}
           className="flex flex-col p-2 md:p-5 w-full mx-auto rounded-md max-w-3xl gap-2 border"
         >
-          <h2 className="text-2xl font-bold">Hai sa vorbim</h2>
+          <h2 className="text-2xl font-bold">May we be at your service</h2>
 
           <div className="flex items-center justify-between flex-wrap sm:flex-nowrap w-full gap-2">
             <FormField
@@ -61,10 +61,10 @@ export function DraftForm() {
               name="fullName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel>Nume complet</FormLabel> *
+                  <FormLabel>Full Name</FormLabel> *
                   <FormControl>
                     <Input
-                      placeholder="Numele dvs."
+                      placeholder="Your name"
                       type="text"
                       value={field.value}
                       onChange={(e) => field.onChange(e.target.value)}
@@ -82,7 +82,7 @@ export function DraftForm() {
                   <FormLabel>Email</FormLabel> *
                   <FormControl>
                     <Input
-                      placeholder="Adresa dvs. de email"
+                      placeholder="Your email"
                       type="email"
                       value={field.value}
                       onChange={(e) => field.onChange(e.target.value)}
@@ -100,7 +100,7 @@ export function DraftForm() {
               name="phoneNumber"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel>Nr. telefon</FormLabel> *
+                  <FormLabel>Phone number</FormLabel> *
                   <FormControl>
                     <Input
                       placeholder="07XXXXXXXX"
@@ -121,14 +121,15 @@ export function DraftForm() {
                   { value: "epo", label: "EPO" },
                   { value: "t&d", label: "T&D" },
                   { value: "c&a", label: "C&A" },
+                  { value: "other", label: "Other" },
                 ];
                 return (
                   <FormItem>
-                    <FormLabel>Vreau</FormLabel> *
+                    <FormLabel>I want</FormLabel> *
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder="Selectati" />
+                          <SelectValue placeholder="Select" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
@@ -151,11 +152,11 @@ export function DraftForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Mesaj</FormLabel> *
+                <FormLabel>Message</FormLabel> *
                 <FormControl>
                   <Textarea
                     {...field}
-                    placeholder="Mesajul dvs."
+                    placeholder="Your message"
                     className="resize-none"
                   />
                 </FormControl>
