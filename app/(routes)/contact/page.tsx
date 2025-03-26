@@ -2,7 +2,7 @@
 import { DraftForm } from "@/components/draft-form";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/ui/footer";
-import { MailIcon, PhoneCallIcon } from "lucide-react";
+import { IconDeviceLandlinePhone, IconDeviceMobile, IconMail } from "@tabler/icons-react";
 import Link from "next/link";
 import React from "react";
 
@@ -18,19 +18,19 @@ const Contact = () => {
           <div className="flex flex-col items-center">
             <p className="text-xl">
               <Link href="tel:+40213303012" className="text-[#8cc63e] flex gap-2">
-                <PhoneCallIcon />
+                <IconDeviceLandlinePhone />
                 +40 21 330 30 12
               </Link>
             </p>
             <p className="text-xl">
               <Link href="tel:+40727282366" className="text-[#8cc63e] flex gap-2">
-              <PhoneCallIcon />
+              <IconDeviceMobile />
               +40 7272 UBEON
               </Link>
             </p>
             <p className="text-xl mb-8">
               <Link href="mailto:contact@ubeon.ro" className="text-[#8cc63e] flex gap-2">
-              <MailIcon/>
+              <IconMail/>
                 contact@ubeon.ro
               </Link>
             </p>
