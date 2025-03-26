@@ -101,7 +101,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <IconBrandFacebook className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
-                  <span>UBEON</span>
+                  <span>ubeon</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <IconBrandX className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />

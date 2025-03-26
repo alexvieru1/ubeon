@@ -221,7 +221,7 @@ export default function Home() {
           esse corporis repellendus, sunt ut, id modi magni aliquam corrupti!
         </p> */}
         <div className="my-4 px-4 flex justify-center text-center text-3xl font-semibold">
-          <p>ubeon este mereu solutia, nu problema!</p>
+          <p className="text-[#8cc63e]">ubeon este mereu solutia, nu problema!</p>
         </div>
         <Card className="mt-8 w-[90%] xl:w-[60%]">
           <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
