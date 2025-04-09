@@ -22,7 +22,7 @@ const page = () => {
       src: "/images/red.png",
       textColor: "text-red-500",
       btnColor: "bg-red-500",
-      href: "/servicii/epo",
+      href: "/services/epo",
       details: [
         "Your EPO va fi partenerul tau de maxima incredere in Panificarea si Organizarea unui Eveniment. Daca  20 de ani de experinta nu sunt suficienti pentru a face dovada ca stim ce facem atunci acceptam provicarea lansata de evenimentul tau. ",
         "Suntem aici pentru evenimente corporate dar si evenimente personale.  Daca ai spus un eveniment atunci obligatoriu trebuie sa iti iei  Your EPO de  la Ubeon  care va face din ideea ta de eveniment , amintirea care nu se va sterge niciodata din memorie. Your EPO  planifica si organizeaza cu dorinta ca TOTUL TREBUIE SA FIE MEMORABIL.  Indiferent ca vorbim despre  conferinte, gale, prezentari, lansari, vernisaje, expozitii, sau altele, TU te vei bucura de eveniment  la fel ca toti participantii. Efortul  organizarii este preluat de Your  EPO .  ",
@@ -36,7 +36,7 @@ const page = () => {
       src: "/images/orange.png",
       textColor: "text-orange-500",
       btnColor: "bg-orange-500",
-      href: "/servicii/t&d",
+      href: "/services/t&d",
       details: [
         "Da. Trainingul si Dezvoltarea nu au fost niciodata mai importante  intro echipa , asa cum sunt astazi. ",
         "Provocarile tehnologice actuale ne arata ca fara o abordare corecta  la acest capitol, riscurile de insucces sunt ridicate. ",
@@ -52,7 +52,7 @@ const page = () => {
       src: "/images/blue.png",
       textColor: "text-blue-500",
       btnColor: "bg-blue-500",
-      href: "/servicii/c&a",
+      href: "/services/c&a",
       details: [
         "Adica acum dupa 20 de ani ce sa facem cu tot ce am acumulat ? Toata experinta si expertiza noastra poate si trebuie sa fie transferata acolo unde trebuie. ",
         "Asadar Your C&A iti va oferi  timpul sau si tot ce cunoaste in sfera sa de expertiza, pentru ca tu sa te bucuri cu adevarat de un consultant si advisor de incredere. ",

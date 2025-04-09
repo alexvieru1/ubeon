@@ -7,11 +7,11 @@ import { Menu, X } from "lucide-react";
 import { RotateWords } from "./ui/rotate-words";
 
 const navLinks = [
-  { name: "Acasa", path: "/" },
-  { name: "Despre noi", path: "/despre-noi" },
-  { name: "Servicii", path: "/servicii" },
-  { name: "Parteneri", path: "/parteneri" },
-  { name: "Proiecte", path: "/proiecte" },
+  { name: "Home", path: "/" },
+  // { name: "Despre noi", path: "/despre-noi" },
+  { name: "Services", path: "/services" },
+  { name: "Partners", path: "/partners" },
+  { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
 ];
 

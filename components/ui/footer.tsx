@@ -28,36 +28,36 @@ const Footer = () => {
             <div className="md:ml-14">
               <h4 className="font-medium mb-2">Content</h4>
               <ul className="space-y-2 text-sm">
-                <li>
+                {/* <li>
                   <Link
                     href="/despre"
                     className="hover:text-[#8cc63e] dark:hover:text-green-400 transition duration-300"
                   >
                     Despre noi
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
-                    href="/servicii"
+                    href="/services"
                     className="hover:text-[#8cc63e] dark:hover:text-green-400 transition duration-300"
                   >
-                    Servicii
+                    Services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/parteneri"
+                    href="/partners"
                     className="hover:text-[#8cc63e] dark:hover:text-green-400 transition duration-300"
                   >
-                    Parteneri
+                    Partners
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/proiecte"
+                    href="/projects"
                     className="hover:text-[#8cc63e] dark:hover:text-green-400 transition duration-300"
                   >
-                    Proiecte
+                    Projects
                   </Link>
                 </li>
                 <li>

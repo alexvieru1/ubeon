@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardTitle,
 } from "@/components/ui/card";
@@ -22,7 +21,7 @@ export default function Home() {
       src: "/images/red.png",
       btnColor: "bg-red-500",
       href: "https://wa.me/40722567212",
-      redirect: "/servicii/epo",
+      redirect: "/services/epo",
     },
     {
       id: 2,
@@ -30,7 +29,7 @@ export default function Home() {
       src: "/images/orange.png",
       btnColor: "bg-orange-500",
       href: "https://wa.me/40722567212",
-      redirect: "/servicii/t&d",
+      redirect: "/services/t&d",
     },
     {
       id: 3,
@@ -38,7 +37,7 @@ export default function Home() {
       src: "/images/blue.png",
       btnColor: "bg-blue-500",
       href: "https://wa.me/40722567212",
-      redirect: "/servicii/c&a",
+      redirect: "/services/c&a",
     },
   ];
   return (
@@ -47,46 +46,44 @@ export default function Home() {
       <div className="pt-16 flex flex-col justify-center items-center">
         <Card className="mt-8 w-[90%] xl:w-[60%]">
           <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">
-            Despre noi
+            A Bit About Us{" "}
           </CardTitle>
-          <CardDescription className="p-4">
-            O scurta descriere despre istoria noastra
-          </CardDescription>
           <CardContent className="">
             <div className="flex flex-col">
               <div className="flex flex-col md:flex-row">
                 <div className="max-w-[650px]">
                   <p>
-                    <strong>UBEON</strong> este o companie românească cu o
-                    experiență de peste 20 de ani pe piața de servicii B2B și
-                    B2C, dedicată excelenței și inovării. Fondată în 2005, UBEON
-                    a evoluat constant, devenind un partener de încredere pentru
-                    clienți din diverse industrii.
+                    Suntem de 20 de ani pe piata de servicii B2B si B2C in
+                    Romania si niciodata mai aproape de ceea ce suntem astazi.
                   </p>
                   <p className="mt-2">
-                    Misiunea noastră este să oferim soluții personalizate și
-                    eficiente, adaptate nevoilor specifice ale fiecărui client.
-                    Ne mândrim cu echipa noastră de experți, care combină
-                    know-how-ul tehnic cu pasiunea pentru ceea ce facem,
-                    asigurând succesul proiectelor implementate.
+                    De-a lungul celor două decenii de activitate, am reușit să
+                    construim relații durabile și să realizăm parteneriate de
+                    succes, bazate pe încredere și colaborare. Suntem
+                    recunoscuți pentru abordarea noastră proactivă și pentru
+                    capacitatea de a transforma provocările în oportunități.
                   </p>
-                  <p className="mt-2">Valori fundamentale:</p>
-                  <ul>
-                    <li>
-                      • <strong>Integritate</strong>: Respectăm promisiunile și
-                      ne angajăm să menținem cele mai înalte standarde etice în
-                      toate relațiile noastre.
-                    </li>
-                    <li>
-                      • <strong>Inovație</strong>: Ne aflăm într-o continuă
-                      căutare de noi soluții și tehnologii care să aducă valoare
-                      adăugată clienților noștri.
-                    </li>
-                    <li>
-                      • <strong>Excelență</strong>: Ne străduim să depășim
-                      așteptările, oferind servicii de cea mai înaltă calitate.
-                    </li>
-                  </ul>
+                  <p className="mt-2">
+                    Fondata in 2006 Ubeon a evoluat constant, iar Astazi suntem
+                    <strong>
+                      {" "}
+                      Experinta, Cunoastere, Dorinta, Echilibru si Lucrul Bine
+                      Facut.
+                    </strong>
+                  </p>
+                  <p className="mt-2">
+                    Experienta a adus cu sine noutatea si indarjirea,
+                    Cunoasterea a aratat drumul, Dorinta a pastrat deschisa
+                    calea, Echilibrul ne-a ajutat sa nu renuntam, iar Lucrul
+                    bine facut a fost motivatia cea mai puternica pentru a
+                    continua.
+                  </p>
+                  <p className="mt-2">
+                    Acestea, împreună cu <strong>Integritatea</strong> sunt
+                    valorile pe care le punem in fata celor care ne sunt clienți
+                    și aceasta este promisiunea pe care o facem celor care vor
+                    sa ne încredințeze proiectele lor.
+                  </p>
                 </div>
                 <AspectRatio ratio={4 / 1.5}>
                   <Image
@@ -110,33 +107,55 @@ export default function Home() {
                 </AspectRatio>
                 <div className="max-w-[650px] mt-44 md:mt-0">
                   <p className="mt-2">
-                    Serviciile noastre acoperă o gamă largă de domenii, de la
-                    consultanță strategică și managementul proiectelor, până la
-                    marketing digital și dezvoltare de software. Avem
-                    capacitatea de a gestiona proiecte complexe și de a oferi
-                    soluții integrate care să contribuie la creșterea și
-                    dezvoltarea afacerilor clienților noștri.
+                    Misiunea noastră este să oferim soluții personalizate,
+                    eficiente si adaptate nevoilor specifice ale fiecărui client
+                    sub deviza:{" "}
+                    <strong>
+                      Pentru Orice Nevoi, Înainte de Oricine suna-ne pe noi!
+                    </strong>
                   </p>
                   <p className="mt-2">
-                    De-a lungul celor două decenii de activitate, am reușit să
-                    construim relații durabile și să realizăm parteneriate de
-                    succes, bazate pe încredere și colaborare. Suntem
-                    recunoscuți pentru abordarea noastră proactivă și pentru
-                    capacitatea de a transforma provocările în oportunități.
+                    Tot ce stim si tot ce facem am pus in trei cutii de valori
+                    pe care le-am incredintat celor care vor fi pentru tine:
                   </p>
+                  <ul>
+                    <li>
+                      <strong>• Expertul in Organizarea</strong> oricarui tip de
+                      eveniment privat sau corparativ. Meet
+                      <strong> Your EPO</strong>
+                    </li>
+                    <li>
+                      <strong>
+                        • Expertul in Educatie, Training si Dezvolatare
+                      </strong>
+                      , pregatit sa iti ofere cunostinte, metode si tehnici de
+                      lucru adaptate fie pentru nevoile persoanale fie ale
+                      companiei. Meet<strong> Your T&D</strong>
+                    </li>
+                    <li>
+                      <strong>• Expertul Consultant</strong> care preia
+                      intrebarile si nelamuririle tale transformandu-le in
+                      Evaluari, Expertize, Planuri de Actiune, Planuri de
+                      Management, Studii de Fezabilitate, Sondaje si altele
+                      atunci cand sunt necesare. Meet <strong>Your C&A</strong>
+                    </li>
+                  </ul>
                 </div>
               </div>
               <p className="text-center">
-                <strong>UBEON</strong> – Excelență în servicii, pasiune pentru
-                performanță.
+                Suntem cei mai buni sau facem echipa cu cei mai buni, avand
+                construita o retea de parteneri cu care putem ajunge oriunde
+                este nevoie. Am invatat in cei 20 de ani de existenta ca numai
+                asa putem livra dincolo de asteptarile clientilor si
+                partenerilor nostri.
               </p>
             </div>
           </CardContent>
-          <CardFooter className="flex justify-center">
-            <Link href="despre-noi">
-              <Button className="bg-[#8cc63e]">Mai multe</Button>
+          {/* <CardFooter className="flex justify-center">
+            <Link href="services">
+              <Button className="bg-[#8cc63e]">More about</Button>
             </Link>
-          </CardFooter>
+          </CardFooter> */}
         </Card>
         <div className="flex flex-col md:flex-row w-full px-4 xl:w-[60%] gap-4">
           <Card className="mt-8 w-full xl:w-[60%]">
@@ -149,7 +168,7 @@ export default function Home() {
                   key={service.id}
                   className="my-2 flex justify-center items-center"
                 >
-                  <Link href="/servicii">
+                  <Link href="/services">
                     <Image
                       src={service.src}
                       width={100}
@@ -221,7 +240,9 @@ export default function Home() {
           esse corporis repellendus, sunt ut, id modi magni aliquam corrupti!
         </p> */}
         <div className="my-4 px-4 flex justify-center text-center text-3xl font-semibold">
-          <p className="text-[#8cc63e]">ubeon este mereu solutia, nu problema!</p>
+          <p className="text-[#8cc63e]">
+            ubeon este mereu solutia, nu problema!
+          </p>
         </div>
         <Card className="mt-8 w-[90%] xl:w-[60%]">
           <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e]">

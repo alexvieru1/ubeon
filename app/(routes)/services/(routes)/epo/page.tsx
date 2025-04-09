@@ -39,31 +39,36 @@ const page = () => {
                 </div>
                 <div className="text-lg">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quam aliquid tempora, nesciunt explicabo eveniet
-                    necessitatibus laboriosam debitis at iure! Your EPO offers
-                    exceptional event planning and organization services
-                    tailored to meet your every need. Our dedicated team handles
-                    every detail with precision, ensuring memorable and
-                    flawlessly executed events.
+                    Suntem dedicați fiecărui eveniment pe care îl organizăm sau
+                    planificăm. Vei avea un agent dedicat care va fi cu tine pas
+                    cu pas și care va face din eveniment nu doar o reușita ci o
+                    amintire memorabilă. Luăm de la bun început în cosiderare
+                    toate aspectele legate de evenimentul tău si nu lăsam nimic
+                    la voia întâmplării.
                   </p>
                   <p className="mt-4">
-                    With years of experience, we work closely with our clients
-                    to transform their visions into reality. From corporate
-                    conferences to private celebrations, we take pride in
-                    delivering outstanding service and innovative solutions.
+                    The Wow Element... nu trebuie sa ai un buget înainte de a
+                    avea un prim contact cu Your EPO de la Ubeon. Vino cu
+                    evenimentul tău si de buget ne ocupăm împreună. Toate
+                    dorințele legate de evenimentul tău vor avea soluție.
+                  </p>
+                  <p className="mt-4">Evenimentul tău este :</p>
+                  <p className="mt-4">
+                    Conferința, Congres, Competiție sportivă, Petrecere Privată,
+                    Petrecere pentru copii, Petercere pentru adulți, Majorat,
+                    Căsătorie Civila, Căsătorie Religioasă, Aniversare,
+                    Celebrare a unei realizari, Petrecere Corporativă, Petrecere
+                    de Firmă, Lansare de Produs, Lansare de Carte, Concert,
+                    Spectacol, Gală, Prezentare de Modă, Organizare Platou de
+                    Filmare în afara studiourilor, Indoor sau Outdoor, Sărbatori
+                    Populare sau Tradiționale Locale, Zilele Urbei, Zilele
+                    Comunei, Târg, Festival?
                   </p>
                   <p className="mt-4">
-                    With years of experience, we work closely with our clients
-                    to transform their visions into reality. From corporate
-                    conferences to private celebrations, we take pride in
-                    delivering outstanding service and innovative solutions.
-                  </p>
-                  <p className="mt-4">
-                    With years of experience, we work closely with our clients
-                    to transform their visions into reality. From corporate
-                    conferences to private celebrations, we take pride in
-                    delivering outstanding service and innovative solutions.
+                    Pentru oricare din aceasta lista avem un EPO pregătit. Tipul
+                    evenimentului tău nu se regăseste în această enumerare?
+                    Acceptăm provocarea. Sună acum și spune-ne despre ce este
+                    vorba și cu siguranță așteptările tale vor fi depășite.
                   </p>
                 </div>
               </div>
