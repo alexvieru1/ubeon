@@ -52,14 +52,14 @@ const Footer = () => {
                     Partners
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/projects"
                     className="hover:text-[#8cc63e] dark:hover:text-green-400 transition duration-300"
                   >
                     Projects
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     href="/contact"
