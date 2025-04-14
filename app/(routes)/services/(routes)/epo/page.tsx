@@ -14,6 +14,40 @@ import React from "react";
 import Link from "next/link";
 
 const page = () => {
+  const services = [
+    {
+      title: "Your T&D",
+      want: "T&D",
+      description: "Training & Development",
+      src: "/images/orange.png",
+      textColor: "text-orange-500",
+      btnColor: "bg-orange-500",
+      href: "/services/t&d",
+      details: [
+        "Da. Trainingul si Dezvoltarea nu au fost niciodata mai importante  intro echipa , asa cum sunt astazi. ",
+        "Provocarile tehnologice actuale ne arata ca fara o abordare corecta  la acest capitol, riscurile de insucces sunt ridicate. ",
+        "Your T&D iti va sustine nevoile de pregatire si dezvoltare ale personalului prin intermediul unor programe  valoroase si cu efecte de schimbare in bine garantate. ",
+        "Metode simple, usoare si mai ales rapide sunt ceea ce your T&D va elabora si implementa pentru compania ta. Uita de sesiunile lungi si plictisitoare de training. Acum facem ce trebuie acolo unde trebuie. Rapid si cu impact. ",
+        "Your T&D  te sustine iar Your People will do  better for you! Call! Check! Book Your EPO ",
+      ],
+    },
+    {
+      title: "Your C&A",
+      want: "C&A",
+      description: "Consultant & Advisor",
+      src: "/images/blue.png",
+      textColor: "text-blue-500",
+      btnColor: "bg-blue-500",
+      href: "/services/c&a",
+      details: [
+        "Adica acum dupa 20 de ani ce sa facem cu tot ce am acumulat ? Toata experinta si expertiza noastra poate si trebuie sa fie transferata acolo unde trebuie. ",
+        "Asadar Your C&A iti va oferi  timpul sau si tot ce cunoaste in sfera sa de expertiza, pentru ca tu sa te bucuri cu adevarat de un consultant si advisor de incredere. ",
+        "Domenii precum legislatie, contabilitate, relatii de munca, siguranta alimentara, sustenabilitate, integrare, accesare fonduri si granturi, sanatate si Securitate in Munca, Situatii de Urgenta, Medicina Muncii, Asigurari, sunt  acele puncte fierbiti ale afacerii tale. De unele  esti constient, unele iti sunt impuse , da stim si mai stim ca fara ele afacerea ta nu poate merge bine. ",
+        "De la Ubeon poti sa iti ei acum Your C&A. Acesta va fi cu tine permanent si daca nu stie ceva sigur cunoaste pe cineva care stie.  ",
+        "Your C&A este de acum aliatul tau de incredere ! Call! Check! Book Your C&A",
+      ],
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -84,6 +118,28 @@ const page = () => {
               </Link>
             </CardFooter>
           </Card>
+        </div>
+        <div className="md:hidden flex flex-col justify-center items-center gap-10 max-w-4xl w-full mt-10">
+          {services.map((service, index) => (
+            <div key={index}>
+              <Link href={service.href}>
+                <Button className={`${service.btnColor} hover:bg-gray-500`}>
+                  More about your {service.title}
+                </Button>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:flex justify-evenly max-w-4xl w-full mt-10">
+          {services.map((service, index) => (
+            <div key={index}>
+              <Link href={service.href}>
+                <Button className={`${service.btnColor} hover:bg-gray-500`}>
+                  More about your {service.title}
+                </Button>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
       <Footer />

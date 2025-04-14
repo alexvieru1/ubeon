@@ -14,6 +14,38 @@ import React from "react";
 import Link from "next/link";
 
 const page = () => {
+  const services = [
+    {
+      title: "Your EPO",
+      want: "EPO",
+      description: "Event Planner & Organizer",
+      src: "/images/red.png",
+      textColor: "text-red-500",
+      btnColor: "bg-red-500",
+      href: "/services/epo",
+      details: [
+        "Your EPO va fi partenerul tau de maxima incredere in Panificarea si Organizarea unui Eveniment. Daca  20 de ani de experinta nu sunt suficienti pentru a face dovada ca stim ce facem atunci acceptam provicarea lansata de evenimentul tau. ",
+        "Suntem aici pentru evenimente corporate dar si evenimente personale.  Daca ai spus un eveniment atunci obligatoriu trebuie sa iti iei  Your EPO de  la Ubeon  care va face din ideea ta de eveniment , amintirea care nu se va sterge niciodata din memorie. Your EPO  planifica si organizeaza cu dorinta ca TOTUL TREBUIE SA FIE MEMORABIL.  Indiferent ca vorbim despre  conferinte, gale, prezentari, lansari, vernisaje, expozitii, sau altele, TU te vei bucura de eveniment  la fel ca toti participantii. Efortul  organizarii este preluat de Your  EPO .  ",
+        "The wow element !  Your EPO works within any budget.  Call! Check! Book  Your EPO! ",
+      ],
+    },
+    {
+      title: "Your T&D",
+      want: "T&D",
+      description: "Training & Development",
+      src: "/images/orange.png",
+      textColor: "text-orange-500",
+      btnColor: "bg-orange-500",
+      href: "/services/t&d",
+      details: [
+        "Da. Trainingul si Dezvoltarea nu au fost niciodata mai importante  intro echipa , asa cum sunt astazi. ",
+        "Provocarile tehnologice actuale ne arata ca fara o abordare corecta  la acest capitol, riscurile de insucces sunt ridicate. ",
+        "Your T&D iti va sustine nevoile de pregatire si dezvoltare ale personalului prin intermediul unor programe  valoroase si cu efecte de schimbare in bine garantate. ",
+        "Metode simple, usoare si mai ales rapide sunt ceea ce your T&D va elabora si implementa pentru compania ta. Uita de sesiunile lungi si plictisitoare de training. Acum facem ce trebuie acolo unde trebuie. Rapid si cu impact. ",
+        "Your T&D  te sustine iar Your People will do  better for you! Call! Check! Book Your EPO ",
+      ],
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -95,6 +127,28 @@ const page = () => {
               </Link>
             </CardFooter>
           </Card>
+        </div>
+        <div className="md:hidden flex flex-col justify-center items-center gap-10 max-w-4xl w-full mt-10">
+          {services.map((service, index) => (
+            <div key={index}>
+              <Link href={service.href}>
+                <Button className={`${service.btnColor} hover:bg-gray-500`}>
+                  More about your {service.title}
+                </Button>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:flex justify-evenly max-w-4xl w-full mt-10">
+          {services.map((service, index) => (
+            <div key={index}>
+              <Link href={service.href}>
+                <Button className={`${service.btnColor} hover:bg-gray-500`}>
+                  More about your {service.title}
+                </Button>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
       <Footer />

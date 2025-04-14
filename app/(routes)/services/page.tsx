@@ -101,7 +101,7 @@ const page = () => {
                 {/* Footer pinned at the bottom */}
                 <CardFooter className="p-4 flex gap-3 justify-center">
                   <Button className={srv.btnColor}>
-                    More about {srv.want}
+                    More about your {srv.want}
                   </Button>
                   <Button className={srv.btnColor} onClick={handleFastAccessClick}>Get Fast Access</Button>
                 </CardFooter>
