@@ -18,7 +18,7 @@ const page = () => {
     {
       title: "Your EPO",
       want: "EPO",
-      description: "Event Planner & Organizer",
+      description: "Your Event Planer & Organizer",
       src: "/images/red.png",
       textColor: "text-red-500",
       btnColor: "bg-red-500",
@@ -32,7 +32,7 @@ const page = () => {
     {
       title: "Your T&D",
       want: "T&D",
-      description: "Training & Development",
+      description: "Your Training & Development",
       src: "/images/orange.png",
       textColor: "text-orange-500",
       btnColor: "bg-orange-500",
@@ -48,7 +48,7 @@ const page = () => {
     {
       title: "Your C&A",
       want: "C&A",
-      description: "Consultant & Advisor",
+      description: "Your Consultant & Advisor",
       src: "/images/blue.png",
       textColor: "text-blue-500",
       btnColor: "bg-blue-500",
@@ -101,7 +101,7 @@ const page = () => {
                 {/* Footer pinned at the bottom */}
                 <CardFooter className="p-4 flex gap-3 justify-center">
                   <Button className={srv.btnColor}>
-                    More about your {srv.want}
+                    More about Your {srv.want}
                   </Button>
                   <Button className={srv.btnColor} onClick={handleFastAccessClick}>Get Fast Access</Button>
                 </CardFooter>

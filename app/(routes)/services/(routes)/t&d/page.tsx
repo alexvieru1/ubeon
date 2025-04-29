@@ -154,7 +154,7 @@ const page = () => {
             <div key={index}>
               <Link href={service.href}>
                 <Button className={`${service.btnColor} hover:bg-gray-500`}>
-                  More about your {service.title}
+                  More about {service.title}
                 </Button>
               </Link>
             </div>
