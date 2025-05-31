@@ -67,7 +67,7 @@ const page = () => {
           acest capitol, riscurile de insucces sunt ridicate.
         </>,
         <>
-          <em>Your T&D</em> îti va susține nevoile de pregătire și dezvoltare
+          <em>Your T&D</em> îți va susține nevoile de pregătire și dezvoltare
           ale personalului prin intermediul unor programe valoroase și cu efecte
           de schimbare în bine garantate.
         </>,
@@ -97,32 +97,27 @@ const page = () => {
       href: "/services/c&a",
       details: [
         <>
-          Adică acum, după <strong>20 de ani</strong>, ce să facem cu tot ce am
-          acumulat? Toată experiența și expertiza noastră poate și{" "}
-          <em>trebuie</em> să fie transferată acolo unde contează.
+          Toată experința și expertiza noastră acumulată in peste 20 de ani
+          poate și trebuie să fie transferată acolo unde este nevoie.
         </>,
         <>
-          Așadar Your C&A îți va oferi timpul său și tot ce cunoaște în sfera de
-          expertiză, pentru ca tu să te bucuri cu adevărat de un{" "}
-          <strong>consultant&nbsp;&amp;&nbsp;advisor de încredere</strong>.
+          Așadar, <em>Your C&A</em> îti va oferi timpul său și tot ce cunoaște
+          în sfera sa de expertiză, pentru ca tu să te bucuri cu adevărat de un
+          consultant și îndrumător de încredere.
         </>,
         <>
-          Domenii precum legislație, contabilitate, relații de muncă, siguranță
-          alimentară, sustenabilitate, integrare, accesare fonduri și granturi,
-          sănătate și securitate în muncă, situații de urgență, medicină muncii,
-          asigurări — sunt acele puncte fierbinți ale afacerii tale. De unele
-          ești conștient, altele îți sunt impuse; știm și mai știm că fără ele
+          Domenii precum: Legislație, Contabilitate, Relații de muncă, Siguranță
+          alimentară, Sustenabilitate, Integrare, Accesare fonduri și granturi,
+          Sănatate și securitate în muncă, Situații de urgența, Medicina muncii,
+          Asigurări sunt acele puncte fierbinți ale afacerii tale. De unele ești
+          conștient, altele îți sunt impuse. Da, știm și mai știm că fară ele
           afacerea ta nu poate merge bine.
         </>,
         <>
-          De la Ubeon poți să îți iei acum <strong>Your C&A</strong>. Acesta va
-          fi cu tine permanent și, dacă nu știe ceva, sigur cunoaște pe cineva
-          care știe.
+          De la Ubeon poți sa iți iei acum <em>Your C&A</em>. Acesta va fi cu tine
+          permanent și dacă nu știe ceva, sigur cunoaște pe cineva care știe.
         </>,
-        <>
-          Your C&A este de acum aliatul tău de <em>încredere</em>! Call! Check!
-          Book Your C&A.
-        </>,
+        <><strong>Your C&A is now your trustful aliate! Call! Check! Book Your C&A!</strong></>,
       ],
     },
   ];

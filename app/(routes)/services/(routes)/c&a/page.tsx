@@ -71,47 +71,46 @@ const page = () => {
                 </div>
                 <div className="text-lg">
                   <p>
-                    Managementul și administrarea unei afaceri presupune
-                    alocarea de resurse importante de timp către activități care
-                    nu au directă legătură cu activitatea și afacerea ta. Este
-                    vorba de cele mai multe ori de obligațiile legale ce trebuie
+                    Managementul și administrarea unei afaceri presupun alocarea
+                    de resurse importante de timp către activități care nu au
+                    directă legătură cu activitatea și afacerea ta. Este vorba
+                    de cele mai multe ori de obligațiile legale ce trebuie
                     asumate de fiecare antreprenor pentru gestionarea propriei
                     afaceri.
                   </p>
                   <p className="mt-4">
                     Da, suntem și noi de acord că perspectiva birocratică care
-                    impune aceste activități auxiliare au efecte directe asupra
+                    impune aceste activități auxiliare are efecte directe asupra
                     productivității, randamentului, atenției la detalii,
-                    atenției față de client, profitului, etc., mai ales în cazul
-                    unor afaceri mici care nu beneficiază de un aparat sau
-                    organigramă extinse care să permită angajarea directă de
+                    atenției față de client, asupra profitului, etc., mai ales
+                    în cazul unor afaceri mici care nu beneficiază de
+                    organigramă extinsă, care să permită angajarea directă de
                     oameni dedicați acestor aspecte administrative.
                   </p>
                   <p className="mt-4">
                     De aceea, Ubeon, folosindu-se de experiența sa de peste 20
                     de ani și de strânsele relații cu specialiști și experți, te
-                    ajută să susții aceste nevoi într-o manieră în care punen în
+                    ajută să susții aceste nevoi într-o manieră în care punem în
                     prim-plan înțelegerea necesităților și salvarea timpului
                     necesar proceselor de business direct. Pentru toate
-                    perspectivele birocratice ale afacerii tale Ubeon este
+                    perspectivele birocratice ale afacerii tale, Ubeon este
                     capabil să iți ofere susținere dedicată, consultanță directă
                     și servicii concrete cu care să poți răspunde obligațiilor
-                    de natură legislativă specifice afacerii tale.
+                    de natură legala specifice afacerii tale.
                   </p>
                   <p className="mt-4">
-                    Your C & A poate fi un expert specialist în Legislație,
-                    Contabilitate, Relații de Muncă, Sustenabilitate, Integrare,
-                    Mediu, Accesare Fonduri, Sănătate și Securitate în Muncă,
-                    Situații de Urgență, Medicina Muncii, Asigurări, Siguranță
-                    Alimentară, Monitorizare Procese Interne, Responsabilitate
-                    Sociala, Etică, Dezvoltare, Creditare, Audit, Imobiliare,
-                    Evaluare. Daca specialistul de care ai nevoie nu este in
-                    aceasta lista vom face tot ce putem ca să îl găsim pentru
-                    tine.
+                    <em>Your C&A</em> poate fi un expert specialist în
+                    Legislație, Contabilitate, Relații de muncă,
+                    Sustenabilitate, Integrare, Mediu, Accesare fonduri,
+                    Sănătate și securitate în muncă, Situații de urgență,
+                    Medicina muncii, Asigurări, Siguranță alimentară,
+                    Monitorizare procese interne, Responsabilitate socială,
+                    Etică, Dezvoltare, Creditare, Audit, Imobiliare, Evaluare,
+                    etc. Daca specialistul de care ai nevoie nu este în această
+                    listă vom face tot ce putem ca să îl găsim pentru tine.
                   </p>
                   <p className="mt-4">
-                    Your C & A de la Ubeon va fi întotdeauna parte din soluție,
-                    nu din problemă.
+                    <em>Your C&A</em> de la Ubeon va fi întotdeauna parte din soluție.
                   </p>
                 </div>
               </div>
