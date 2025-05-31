@@ -164,13 +164,15 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <p className="">
+                <p className="flex flex-col">
                   Misiunea noastră este să oferim soluții personalizate,
                   eficiente și adaptate nevoilor specifice ale fiecărui client,
                   sub deviza: <br />
-                  <strong>
-                    Pentru orice nevoie, înainte de oricine, sună-ne pe noi!
-                  </strong>
+                  <span className="text-center">
+                    <strong>
+                      Pentru orice nevoi, înainte de oricine, sună-ne pe noi!
+                    </strong>
+                  </span>
                 </p>
                 <p className="mt-2">
                   Tot ce știm și tot ce facem am pus în trei cutii de valori, pe
