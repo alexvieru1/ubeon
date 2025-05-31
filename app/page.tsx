@@ -276,7 +276,7 @@ export default function Home() {
     grid
     gap-2                /* phones                     */
     md:gap-3             /* tablets / small-laptop     */
-    md:px-24
+    lg:px-24
     lg:gap-1             /* large screens, almost no gap */
 
     md:grid-cols-2 md:grid-rows-2
