@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,9 +24,28 @@ const page = () => {
       btnColor: "bg-red-500",
       href: "/services/epo",
       details: [
-        "Your EPO va fi partenerul tau de maxima incredere in Panificarea si Organizarea unui Eveniment. Daca  20 de ani de experinta nu sunt suficienti pentru a face dovada ca stim ce facem atunci acceptam provicarea lansata de evenimentul tau. ",
-        "Suntem aici pentru evenimente corporate dar si evenimente personale.  Daca ai spus un eveniment atunci obligatoriu trebuie sa iti iei  Your EPO de  la Ubeon  care va face din ideea ta de eveniment , amintirea care nu se va sterge niciodata din memorie. Your EPO  planifica si organizeaza cu dorinta ca TOTUL TREBUIE SA FIE MEMORABIL.  Indiferent ca vorbim despre  conferinte, gale, prezentari, lansari, vernisaje, expozitii, sau altele, TU te vei bucura de eveniment  la fel ca toti participantii. Efortul  organizarii este preluat de Your  EPO .  ",
-        "The wow element !  Your EPO works within any budget.  Call! Check! Book  Your EPO! ",
+        <>
+          <em>Your EPO</em> va fi partenerul tău de maximă încredere în
+          Planificarea și Organizarea unui Eveniment. Dacă 20 de ani de
+          experiență nu sunt suficienți pentru a dovedi că știm ce facem, atunci
+          acceptăm provocarea lansată de evenimentul tău.
+        </>,
+        <>
+          Suntem aici pentru evenimente corporate, dar și evenimente personale.
+          Dacă ai spus un eveniment, atunci obligatoriu trebuie să îți iei Your
+          EPO de la Ubeon, care va face din ideea ta de eveniment amintirea care
+          nu se va șterge niciodată din memorie. <em>Your EPO</em> planifică și
+          organizează cu dorința că TOTUL TREBUIE SA FIE MEMORABIL. Indiferent
+          că vorbim despre conferințe, gale, prezentări, lansări, vernisaje,
+          expoziții sau altele, TU te vei bucura de eveniment la fel ca toți
+          participanții. Efortul organizării este preluat de <em>Your EPO</em>.
+        </>,
+        <>
+          <strong>
+            The wow element! Your EPO works within any budget. Call! Check! Book
+            Your EPO!{" "}
+          </strong>
+        </>,
       ],
     },
     {
@@ -103,7 +122,12 @@ const page = () => {
                   <Button className={srv.btnColor}>
                     More about Your {srv.want}
                   </Button>
-                  <Button className={srv.btnColor} onClick={handleFastAccessClick}>Get Fast Access</Button>
+                  <Button
+                    className={srv.btnColor}
+                    onClick={handleFastAccessClick}
+                  >
+                    Get Fast Access
+                  </Button>
                 </CardFooter>
               </Card>
             </Link>

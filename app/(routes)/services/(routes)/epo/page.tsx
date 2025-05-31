@@ -75,34 +75,36 @@ const page = () => {
                   <p>
                     Suntem dedicați fiecărui eveniment pe care îl organizăm sau
                     planificăm. Vei avea un agent dedicat care va fi cu tine pas
-                    cu pas și care va face din eveniment nu doar o reușita ci o
-                    amintire memorabilă. Luăm de la bun început în cosiderare
-                    toate aspectele legate de evenimentul tău si nu lăsam nimic
-                    la voia întâmplării.
+                    cu pas și care va face din eveniment nu doar o reușită, ci o
+                    amintire memorabilă. Luăm de la bun început în considerare
+                    toate aspectele legate de evenimentul tău pentru ca nimic să
+                    nu rămână la voia întâmplării.
                   </p>
                   <p className="mt-4">
-                    The Wow Element... nu trebuie sa ai un buget înainte de a
-                    avea un prim contact cu Your EPO de la Ubeon. Vino cu
-                    evenimentul tău si de buget ne ocupăm împreună. Toate
-                    dorințele legate de evenimentul tău vor avea soluție.
-                  </p>
-                  <p className="mt-4">Evenimentul tău este :</p>
-                  <p className="mt-4">
-                    Conferința, Congres, Competiție sportivă, Petrecere Privată,
-                    Petrecere pentru copii, Petercere pentru adulți, Majorat,
-                    Căsătorie Civila, Căsătorie Religioasă, Aniversare,
-                    Celebrare a unei realizari, Petrecere Corporativă, Petrecere
-                    de Firmă, Lansare de Produs, Lansare de Carte, Concert,
-                    Spectacol, Gală, Prezentare de Modă, Organizare Platou de
-                    Filmare în afara studiourilor, Indoor sau Outdoor, Sărbatori
-                    Populare sau Tradiționale Locale, Zilele Urbei, Zilele
-                    Comunei, Târg, Festival?
+                    <em>The Wow Element!</em> Nu trebuie să ai un buget înainte
+                    de a avea un prim contact cu <em>Your EPO</em> de la Ubeon.
+                    Vino cu evenimentul tău! De buget ne ocupăm împreună!
                   </p>
                   <p className="mt-4">
-                    Pentru oricare din aceasta lista avem un EPO pregătit. Tipul
-                    evenimentului tău nu se regăseste în această enumerare?
+                    Toate dorințele legate de evenimentul tău vor avea soluție.
+                  </p>
+                  <p className="mt-4">
+                    Evenimentul tău este : Conferință, Congres, Competiție
+                    sportivă, Petrecere privată, Petrecere pentru copii,
+                    Petrecere pentru adulți, Majorat, Căsătorie civilă,
+                    Căsătorie religioasă, Aniversare, Celebrare a unei
+                    realizări, Petrecere corporativă, Petrecere de firmă,
+                    Lansare de produs, Lansare de carte, Concert, Spectacol,
+                    Gală, Prezentare de modă, Organizare platou de filmare în
+                    afara studiourilor - Indoor sau Outdoor, Sărbători populare
+                    sau tradiționale locale, Zilele urbei, Zilele comunei, Târg,
+                    Festival?
+                  </p>
+                  <p className="mt-4">
+                    Pentru oricare din această listă avem un <em>EPO</em> pregătit. Tipul
+                    evenimentului tău nu se regăsește în această enumerare?
                     Acceptăm provocarea. Sună acum și spune-ne despre ce este
-                    vorba și cu siguranță așteptările tale vor fi depășite.
+                    vorba! Cu siguranță așteptările tale vor fi depășite.
                   </p>
                 </div>
               </div>
