@@ -117,7 +117,7 @@ const page = () => {
           De la Ubeon poți să îți iei acum <em>Your C&A</em>. Acesta va fi cu tine
           permanent și dacă nu știe ceva, sigur cunoaște pe cineva care știe.
         </>,
-        <><strong>Your C&A is now your trustful aliate! Call! Check! Book Your C&A!</strong></>,
+        <><strong>Your C&A is now your trustful ally! Call! Check! Book Your C&A!</strong></>,
       ],
     },
   ];
