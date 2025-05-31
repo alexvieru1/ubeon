@@ -118,6 +118,7 @@ const Footer = () => {
                   <Link
                     href="https://www.facebook.com/profile.php?id=100069772204107"
                     className="flex items-center gap-2"
+                    target="_blank"
                   >
                     <IconBrandFacebook className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
                     <span>ubeon</span>
