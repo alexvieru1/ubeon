@@ -48,6 +48,7 @@ const page = () => {
           </strong>
         </>,
       ],
+      bottomImage:"/images/epo-services.jpg"
     },
     {
       title: "Your T&D",
@@ -86,6 +87,7 @@ const page = () => {
           </strong>
         </>,
       ],
+      bottomImage:"/images/t&d-services.jpg"
     },
     {
       title: "Your C&A",
@@ -119,6 +121,7 @@ const page = () => {
         </>,
         <><strong>Your C&A is now your trustful ally! Call! Check! Book Your C&A!</strong></>,
       ],
+      bottomImage:"/images/c&a-services.jpg"
     },
   ];
   const handleFastAccessClick = () => {
@@ -158,7 +161,8 @@ const page = () => {
                   ))}
                 </CardContent>
                 {/* Footer pinned at the bottom */}
-                <CardFooter className="p-4 flex gap-3 justify-center">
+                <CardFooter className="p-4 flex flex-col gap-3 justify-center">
+                  <Image src={srv.bottomImage} width={500} height={300} alt="image"/>
                   <Button className={srv.btnColor}>
                     More about Your {srv.want}
                   </Button>
