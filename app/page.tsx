@@ -50,15 +50,16 @@ export default function Home() {
   const [currentIndexes, setCurrentIndexes] = useState([0, 0, 0]);
 
   useEffect(() => {
-    const intervals = carouselImages.map((images, carouselIndex) =>
-      setInterval(() => {
-        setCurrentIndexes((prev) => {
-          const newIndexes = [...prev];
-          newIndexes[carouselIndex] =
-            (newIndexes[carouselIndex] + 1) % images.length;
-          return newIndexes;
-        });
-      }, 3000 + carouselIndex * 500) // optional: different timing for variety
+    const intervals = carouselImages.map(
+      (images, carouselIndex) =>
+        setInterval(() => {
+          setCurrentIndexes((prev) => {
+            const newIndexes = [...prev];
+            newIndexes[carouselIndex] =
+              (newIndexes[carouselIndex] + 1) % images.length;
+            return newIndexes;
+          });
+        }, 3000 + carouselIndex * 500) // optional: different timing for variety
     );
 
     return () => intervals.forEach(clearInterval);
@@ -125,16 +126,16 @@ export default function Home() {
             A bit about us
           </CardTitle>
           <CardContent className="text-start">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
               <div>
                 <p>
                   Suntem de 20 de ani pe piața de servicii B2B și B2C din
                   România și niciodată mai aproape de ceea ce suntem astăzi.
                 </p>
                 <p className="mt-2">
-                  De-a lungul celor două decenii de activitate, am reușit să
+                  De-a lungul celor două decenii de activitate am reușit să
                   construim relații durabile și să realizăm parteneriate de
-                  succes, bazate pe încredere și colaborare. Suntem recunoscuți
+                  succes bazate pe încredere și colaborare. Suntem recunoscuți
                   pentru abordarea noastră proactivă și pentru capacitatea de a
                   transforma provocările în oportunități.
                 </p>
@@ -142,15 +143,18 @@ export default function Home() {
                   Fondată în 2006, Ubeon a evoluat constant, iar astăzi suntem
                   <strong>
                     {" "}
-                    Experiență, Cunoaștere, Dorință, Echilibru și Lucrul Bine
-                    Făcut.
+                    <em>
+                      Experiență, Cunoaștere, Dorință, Echilibru și Lucrul Bine
+                      Făcut.
+                    </em>
                   </strong>
                 </p>
                 <p className="mt-2">
-                  Experiența a adus cu sine noutatea și îndârjirea, Cunoașterea
-                  a arătat drumul, Dorința a păstrat deschisă calea, Echilibrul
-                  ne-a ajutat să nu renunțăm, iar Lucrul bine făcut a fost
-                  motivația cea mai puternică pentru a continua.
+                  <em>Experiența</em> a adus cu sine noutatea și îndârjirea,{" "}
+                  <em>Cunoașterea </em>a arătat drumul, <em>Dorința</em> a
+                  păstrat deschisă calea, <em>Echilibrul </em>
+                  ne-a ajutat să nu renunțăm, iar <em>Lucrul bine făcut</em> a
+                  fost motivația cea mai puternică pentru a continua.
                 </p>
                 <p className="mt-2">
                   Acestea, împreună cu <strong>Integritatea</strong>, sunt
@@ -160,7 +164,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <p className="mt-2">
+                <p className="">
                   Misiunea noastră este să oferim soluții personalizate,
                   eficiente și adaptate nevoilor specifice ale fiecărui client,
                   sub deviza: <br />
@@ -195,7 +199,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <p className="mt-4">
+              <p className="">
                 Suntem cei mai buni sau facem echipă cu cei mai buni, având
                 construită o rețea de parteneri cu care putem ajunge oriunde
                 este nevoie. Am învățat, în cei 20 de ani de existență, că numai
