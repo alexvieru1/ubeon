@@ -269,26 +269,66 @@ export default function Home() {
             <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e] text-center">
               Contact us
             </CardTitle>
-            {/* <CardDescription className="px-4 text-center font-semibold">
-              Accesează și descoperă cum poți să faci din Your EPO, Your T&D,
-              Your C&A partenerul de care ai nevoie!
-            </CardDescription> */}
-            <CardContent className="md:py-4">
-              <div className="flex flex-row my-3 justify-center items-center">
-                <MapPinIcon className="w-6 h-6 text-[#8cc63e]" />
-                <p className="ml-2">Sector 4, București</p>
+
+            <CardContent
+              className="
+    /* ❶ GRID -------------------------------------------------------------- */
+    grid
+    gap-2                /* phones                     */
+    md:gap-3             /* tablets / small-laptop     */
+    md:px-24
+    lg:gap-1             /* large screens, almost no gap */
+
+    md:grid-cols-2 md:grid-rows-2
+
+    /* ❷ HEIGHT ------------------------------------------------------------ */
+    md:h-60              /* small laptop               */
+    lg:h-auto            /* ≥ lg ➜ let content decide  */
+  "
+            >
+              {/* ─── Text + icons ────────────────────────────────── */}
+              <div
+                className="
+        flex flex-col
+        md:row-start-1 md:col-start-1
+        place-self-start
+      "
+              >
+                <div className="flex items-center my-1">
+                  <MapPinIcon className="w-5 h-5 text-[#8cc63e]" />
+                  <p className="ml-2">Sector 4, București</p>
+                </div>
+                <div className="flex items-center my-1">
+                  <PhoneCallIcon className="w-5 h-5 text-[#8cc63e]" />
+                  <p className="ml-2">+40 21 330 30 12</p>
+                </div>
+                <div className="flex items-center my-1">
+                  <PhoneCallIcon className="w-5 h-5 text-[#8cc63e]" />
+                  <p className="ml-2">+40 7272 UBEON</p>
+                </div>
+                <div className="flex items-center my-1">
+                  <MailIcon className="w-5 h-5 text-[#8cc63e]" />
+                  <p className="ml-2">contact@ubeon.ro</p>
+                </div>
               </div>
-              <div className="flex flex-row my-3 justify-center items-center">
-                <PhoneCallIcon className="w-6 h-6 text-[#8cc63e]" />
-                <p className="ml-2">+40 21 330 30 12</p>
-              </div>
-              <div className="flex flex-row my-3 justify-center items-center">
-                <PhoneCallIcon className="w-6 h-6 text-[#8cc63e]" />
-                <p className="ml-2">+40 7272 UBEON</p>
-              </div>
-              <div className="flex flex-row my-3 justify-center items-center">
-                <MailIcon className="w-6 h-6 text-[#8cc63e]" />
-                <p className="ml-2">contact@ubeon.ro</p>
+
+              {/* ─── Logo ────────────────────────────────────────── */}
+              <div
+                className="
+        mt-4 md:mt-0           /* add spacing only on small screens */
+        md:row-start-2 md:col-start-2
+        place-self-end
+      "
+              >
+                <Image
+                  src="/images/sigla-ubeon.jpg"
+                  width={
+                    400
+                  } /* a bit smaller for phones; you can also use responsive sizes */
+                  height={400}
+                  alt="sigla-ubeon"
+                  className="rounded-lg"
+                />
               </div>
             </CardContent>
           </Card>
