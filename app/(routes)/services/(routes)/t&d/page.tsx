@@ -76,7 +76,7 @@ const page = () => {
                   </p>
                   <p className="mt-4">
                     Fie că este vorba de un training specific sau general îți
-                    oferim soluții moderne si tehnici super prietenoase astfel
+                    oferim soluții moderne si tehnici super prietenoase, astfel
                     încât abilitățile și competențele vizate să fie transferate
                     efectiv și utilizate imediat de către absolvenții
                     programelor de pregătire profesională și dezvoltare
@@ -84,13 +84,13 @@ const page = () => {
                   </p>
                   <p className="mt-4">
                     Monitorizarea rezultatelor post training? Desigur, rămâne în
-                    grija noastră și poate face obiectul unei discuții cu Your
-                    C&A de la Ubeon.
+                    grija noastră și poate face obiectul unei discuții cu{" "}
+                    <em>Your C&A</em> de la Ubeon.
                   </p>
                   <p className="mt-4">
-                    Susținem peste 100 de cursuri acrediate sau neacreditate de
-                    calificare, specializare sau perfecționare din care poti
-                    alege, iar la nevoie creăm și /sau acredităm cursul 101
+                    Susținem peste 100 de cursuri acreditate sau neacreditate:
+                    de calificare, de specializare sau de perfecționare din care
+                    poți alege. La nevoie creăm și /sau acredităm cursul 101
                     pentru a putea susține nevoia ta sau a companiei.
                   </p>
                   <p className="mt-4">
@@ -100,7 +100,7 @@ const page = () => {
                   </p>
                   <p className="mt-4">
                     Enumeram aici o parte din cele 100 de cursuri pe care le
-                    putem susține;
+                    putem susține:
                   </p>
                   <p className="mt-4">
                     Formator, Referent Resurse Umane, Specialist în Activitatea
@@ -111,17 +111,18 @@ const page = () => {
                     Produs, Manager de Inovare, Organizator Evenimente, Bucătar,
                     Cofetar, Barman, Lucrător Comercial, Cameristă, Ofițer
                     Prelucrare Date cu Caracter Personal, Șef Bucătar, Șef de
-                    Sala, Șef de Restaurant.
+                    Sala, Șef de Restaurant, Specialist HACCP,
                   </p>
                   <p className="mt-4">
                     La cerere putem susține orice Refresh Training în domeniu
                     tău de activitate, Workshop-uri tematice pentru dezvoltare
-                    personala sau activități de tip Team Building.
+                    personală sau activități de tip Team Building.
                   </p>
                   <p className="mt-4">
-                    Vei avea un super specialist T&D la dispoziție. Your T&D de
-                    la Ubeon. Împreună cu acesta se vor stabili toate detaliile
-                    pentru cursul sau trainingul de care ai nevoie.
+                    Vei avea la dispoziție un super specialist in Training si
+                    Dezvoltare, <em>Your T&D</em> de la Ubeon! Împreună cu acesta se vor
+                    stabili toate detaliile pentru cursul sau trainingul de care
+                    ai nevoie
                   </p>
                 </div>
               </div>
