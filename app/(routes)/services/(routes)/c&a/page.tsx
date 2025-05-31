@@ -84,7 +84,7 @@ const page = () => {
                     productivității, randamentului, atenției la detalii,
                     atenției față de client, asupra profitului, etc., mai ales
                     în cazul unor afaceri mici care nu beneficiază de
-                    organigramă extinsă, care să permită angajarea directă de
+                    organigramă extinsă care să permită angajarea directă de
                     oameni dedicați acestor aspecte administrative.
                   </p>
                   <p className="mt-4">
@@ -96,7 +96,7 @@ const page = () => {
                     perspectivele birocratice ale afacerii tale, Ubeon este
                     capabil să iți ofere susținere dedicată, consultanță directă
                     și servicii concrete cu care să poți răspunde obligațiilor
-                    de natură legala specifice afacerii tale.
+                    de natură legală specifice afacerii tale.
                   </p>
                   <p className="mt-4">
                     <em>Your C&A</em> poate fi un expert specialist în
