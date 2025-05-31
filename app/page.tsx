@@ -213,10 +213,10 @@ export default function Home() {
                 putem livra dincolo de așteptările clienților și partenerilor
                 noștri.
               </p>
-              <p className="font-bold">
+              {/* <p className="font-bold">
                 Accesează și descoperă cum poți să faci din Your EPO, Your T&D,
                 Your C&A partenerul de care ai nevoie!{" "}
-              </p>
+              </p> */}
             </div>
           </CardContent>
         </Card>
@@ -227,7 +227,7 @@ export default function Home() {
             <CardTitle className="p-4 text-xl text-center xl:text-2xl text-[#8cc63e]">
               Excellent services
             </CardTitle>
-            <CardDescription className="p-4 text-center font-semibold">
+            <CardDescription className="px-4 text-center font-semibold">
               Accesează și descoperă cum poți să faci din Your EPO, Your T&D,
               Your C&A partenerul de care ai nevoie!
             </CardDescription>
@@ -269,6 +269,10 @@ export default function Home() {
             <CardTitle className="p-4 text-xl xl:text-2xl text-[#8cc63e] text-center">
               Contact us
             </CardTitle>
+            {/* <CardDescription className="px-4 text-center font-semibold">
+              Accesează și descoperă cum poți să faci din Your EPO, Your T&D,
+              Your C&A partenerul de care ai nevoie!
+            </CardDescription> */}
             <CardContent className="md:py-4">
               <div className="flex flex-row my-3 justify-center items-center">
                 <MapPinIcon className="w-6 h-6 text-[#8cc63e]" />
