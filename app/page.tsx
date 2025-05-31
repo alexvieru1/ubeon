@@ -296,7 +296,7 @@ export default function Home() {
               >
                 <div className="flex items-center my-1">
                   <MapPinIcon className="w-5 h-5 text-[#8cc63e]" />
-                  <p className="ml-2">Sector 4, București</p>
+                  <p className="ml-2 whitespace-nowrap">Sector 4, București</p>
                 </div>
                 <div className="flex items-center my-1">
                   <PhoneCallIcon className="w-5 h-5 text-[#8cc63e]" />
