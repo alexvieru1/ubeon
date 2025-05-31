@@ -181,32 +181,32 @@ export default function Home() {
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   <li>
                     <strong>Expertul în organizarea</strong> oricărui tip de
-                    eveniment privat sau corporativ. Meet
-                    <strong> Your EPO</strong>
+                    eveniment privat sau corporativ.
+                    <strong> Meet Your EPO!</strong>
                   </li>
                   <li>
                     <strong>
                       Expertul în educație, training și dezvoltare
-                    </strong>
-                    , pregătit să îți ofere cunoștințe, metode și tehnici de
-                    lucru adaptate fie pentru nevoile personale, fie ale
-                    companiei. Meet <strong>Your T&D</strong>
+                    </strong>{" "}
+                    pregătit să îți ofere cunoștințe, metode și tehnici de lucru
+                    adaptate, fie pentru nevoile personale, fie ale companiei.
+                    <strong> Meet Your T&D!</strong>
                   </li>
                   <li>
                     <strong>Expertul consultant</strong> care preia întrebările
                     și nelămuririle tale, transformându-le în evaluări,
                     expertize, planuri de acțiune, planuri de management, studii
                     de fezabilitate, sondaje și altele, atunci când sunt
-                    necesare. Meet <strong>Your C&A</strong>
+                    necesare.<strong> Meet Your C&A!</strong>
                   </li>
                 </ul>
               </div>
               <p className="">
-                Suntem cei mai buni sau facem echipă cu cei mai buni, având
-                construită o rețea de parteneri cu care putem ajunge oriunde
-                este nevoie. Am învățat, în cei 20 de ani de existență, că numai
-                așa putem livra dincolo de așteptările clienților și
-                partenerilor noștri.
+                Avem construită o rețea de parteneri cu care putem ajunge
+                oriunde este nevoie, fiind cei mai buni sau făcând echipă cu cei
+                mai buni. Am învățat în cei 20 de ani de existență că numai așa
+                putem livra dincolo de așteptările clienților și partenerilor
+                noștrii.
               </p>
             </div>
           </CardContent>
