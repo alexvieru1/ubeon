@@ -119,7 +119,7 @@ const page = () => {
                     Vei avea la dispoziție un super specialist in Training si
                     Dezvoltare, <em>Your T&D</em> de la Ubeon! Împreună cu
                     acesta se vor stabili toate detaliile pentru cursul sau
-                    trainingul de care ai nevoie
+                    trainingul de care ai nevoie.
                   </p>
                 </div>
               </div>

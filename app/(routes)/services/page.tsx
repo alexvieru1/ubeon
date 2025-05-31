@@ -102,19 +102,19 @@ const page = () => {
         </>,
         <>
           Așadar, <em>Your C&A</em> îți va oferi timpul său și tot ce cunoaște
-          în sfera sa de expertiză, pentru ca tu să te bucuri cu adevărat de un
+          în sfera sa de expertiză pentru ca tu să te bucuri cu adevărat de un
           consultant și îndrumător de încredere.
         </>,
         <>
           Domenii precum: Legislație, Contabilitate, Relații de muncă, Siguranță
           alimentară, Sustenabilitate, Integrare, Accesare fonduri și granturi,
-          Sănatate și securitate în muncă, Situații de urgența, Medicina muncii,
+          Sănatate și securitate în muncă, Situații de urgență, Medicina muncii,
           Asigurări sunt acele puncte fierbinți ale afacerii tale. De unele ești
-          conștient, altele îți sunt impuse. Da, știm și mai știm că fară ele
+          conștient, altele îți sunt impuse. Da, știm și mai știm că fără ele
           afacerea ta nu poate merge bine.
         </>,
         <>
-          De la Ubeon poți sa iți iei acum <em>Your C&A</em>. Acesta va fi cu tine
+          De la Ubeon poți să îți iei acum <em>Your C&A</em>. Acesta va fi cu tine
           permanent și dacă nu știe ceva, sigur cunoaște pe cineva care știe.
         </>,
         <><strong>Your C&A is now your trustful aliate! Call! Check! Book Your C&A!</strong></>,
