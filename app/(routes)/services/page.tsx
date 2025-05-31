@@ -32,13 +32,14 @@ const page = () => {
         </>,
         <>
           Suntem aici pentru evenimente corporate, dar și evenimente personale.
-          Dacă ai spus un eveniment, atunci obligatoriu trebuie să îți iei Your
-          EPO de la Ubeon, care va face din ideea ta de eveniment amintirea care
-          nu se va șterge niciodată din memorie. <em>Your EPO</em> planifică și
-          organizează cu dorința că TOTUL TREBUIE SA FIE MEMORABIL. Indiferent
-          că vorbim despre conferințe, gale, prezentări, lansări, vernisaje,
-          expoziții sau altele, TU te vei bucura de eveniment la fel ca toți
-          participanții. Efortul organizării este preluat de <em>Your EPO</em>.
+          Dacă ai spus un eveniment, atunci obligatoriu trebuie să îți iei{" "}
+          <em>Your EPO</em> de la Ubeon, care va face din ideea ta de eveniment
+          amintirea care nu se va șterge niciodată din memorie.{" "}
+          <em>Your EPO</em> planifică și organizează cu dorința că TOTUL TREBUIE
+          SA FIE MEMORABIL. Indiferent că vorbim despre conferințe, gale,
+          prezentări, lansări, vernisaje, expoziții sau altele, TU te vei bucura
+          de eveniment la fel ca toți participanții. Efortul organizării este
+          preluat de <em>Your EPO</em>.
         </>,
         <>
           <strong>
@@ -57,11 +58,33 @@ const page = () => {
       btnColor: "bg-orange-500",
       href: "/services/t&d",
       details: [
-        "Da. Trainingul si Dezvoltarea nu au fost niciodata mai importante  intro echipa , asa cum sunt astazi. ",
-        "Provocarile tehnologice actuale ne arata ca fara o abordare corecta  la acest capitol, riscurile de insucces sunt ridicate. ",
-        "Your T&D iti va sustine nevoile de pregatire si dezvoltare ale personalului prin intermediul unor programe  valoroase si cu efecte de schimbare in bine garantate. ",
-        "Metode simple, usoare si mai ales rapide sunt ceea ce your T&D va elabora si implementa pentru compania ta. Uita de sesiunile lungi si plictisitoare de training. Acum facem ce trebuie acolo unde trebuie. Rapid si cu impact. ",
-        "Your T&D  te sustine iar Your People will do  better for you! Call! Check! Book Your EPO ",
+        <>
+          Da. Trainingul și Dezvoltarea sunt astăzi mai importante ca niciodată
+          într-o echipă.
+        </>,
+        <>
+          Provocările tehnologice actuale ne arată că fară o abordare corectă la
+          acest capitol, riscurile de insucces sunt ridicate.
+        </>,
+        <>
+          <em>Your T&D</em> îti va susține nevoile de pregătire și dezvoltare
+          ale personalului prin intermediul unor programe valoroase și cu efecte
+          de schimbare în bine garantate.
+        </>,
+        <>
+          Metode simple, ușoare și mai ales rapide sunt ceea ce{" "}
+          <em>Your T&D</em> va elabora și implementa pentru compania ta.
+        </>,
+        <>
+          Uită de sesiunile lungi și plictisitoare de training! Acum facem ce
+          trebuie acolo unde trebuie! Rapid și cu Impact!
+        </>,
+        <>
+          <strong>
+            Your T&D is here and Your People will do better for you! Call!
+            Check! Book Your T&D!
+          </strong>
+        </>,
       ],
     },
     {
@@ -73,11 +96,33 @@ const page = () => {
       btnColor: "bg-blue-500",
       href: "/services/c&a",
       details: [
-        "Adica acum dupa 20 de ani ce sa facem cu tot ce am acumulat ? Toata experinta si expertiza noastra poate si trebuie sa fie transferata acolo unde trebuie. ",
-        "Asadar Your C&A iti va oferi  timpul sau si tot ce cunoaste in sfera sa de expertiza, pentru ca tu sa te bucuri cu adevarat de un consultant si advisor de incredere. ",
-        "Domenii precum legislatie, contabilitate, relatii de munca, siguranta alimentara, sustenabilitate, integrare, accesare fonduri si granturi, sanatate si Securitate in Munca, Situatii de Urgenta, Medicina Muncii, Asigurari, sunt  acele puncte fierbiti ale afacerii tale. De unele  esti constient, unele iti sunt impuse , da stim si mai stim ca fara ele afacerea ta nu poate merge bine. ",
-        "De la Ubeon poti sa iti ei acum Your C&A. Acesta va fi cu tine permanent si daca nu stie ceva sigur cunoaste pe cineva care stie.  ",
-        "Your C&A este de acum aliatul tau de incredere ! Call! Check! Book Your C&A",
+        <>
+          Adică acum, după <strong>20 de ani</strong>, ce să facem cu tot ce am
+          acumulat? Toată experiența și expertiza noastră poate și{" "}
+          <em>trebuie</em> să fie transferată acolo unde contează.
+        </>,
+        <>
+          Așadar Your C&A îți va oferi timpul său și tot ce cunoaște în sfera de
+          expertiză, pentru ca tu să te bucuri cu adevărat de un{" "}
+          <strong>consultant&nbsp;&amp;&nbsp;advisor de încredere</strong>.
+        </>,
+        <>
+          Domenii precum legislație, contabilitate, relații de muncă, siguranță
+          alimentară, sustenabilitate, integrare, accesare fonduri și granturi,
+          sănătate și securitate în muncă, situații de urgență, medicină muncii,
+          asigurări — sunt acele puncte fierbinți ale afacerii tale. De unele
+          ești conștient, altele îți sunt impuse; știm și mai știm că fără ele
+          afacerea ta nu poate merge bine.
+        </>,
+        <>
+          De la Ubeon poți să îți iei acum <strong>Your C&A</strong>. Acesta va
+          fi cu tine permanent și, dacă nu știe ceva, sigur cunoaște pe cineva
+          care știe.
+        </>,
+        <>
+          Your C&A este de acum aliatul tău de <em>încredere</em>! Call! Check!
+          Book Your C&A.
+        </>,
       ],
     },
   ];

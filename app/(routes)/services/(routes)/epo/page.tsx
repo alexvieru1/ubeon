@@ -89,7 +89,7 @@ const page = () => {
                     Toate dorințele legate de evenimentul tău vor avea soluție.
                   </p>
                   <p className="mt-4">
-                    Evenimentul tău este : Conferință, Congres, Competiție
+                    Evenimentul tău este: Conferință, Congres, Competiție
                     sportivă, Petrecere privată, Petrecere pentru copii,
                     Petrecere pentru adulți, Majorat, Căsătorie civilă,
                     Căsătorie religioasă, Aniversare, Celebrare a unei
@@ -101,7 +101,7 @@ const page = () => {
                     Festival?
                   </p>
                   <p className="mt-4">
-                    Pentru oricare din această listă avem un <em>EPO</em> pregătit. Tipul
+                    Pentru oricare din această listă avem un <em>Your EPO</em> pregătit. Tipul
                     evenimentului tău nu se regăsește în această enumerare?
                     Acceptăm provocarea. Sună acum și spune-ne despre ce este
                     vorba! Cu siguranță așteptările tale vor fi depășite.
