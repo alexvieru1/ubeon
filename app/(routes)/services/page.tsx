@@ -48,7 +48,7 @@ const page = () => {
           </strong>
         </>,
       ],
-      bottomImage:"/images/epo-services.jpg"
+      bottomImage:"/images/epo-services2.jpg"
     },
     {
       title: "Your T&D",
@@ -87,7 +87,7 @@ const page = () => {
           </strong>
         </>,
       ],
-      bottomImage:"/images/t&d-services.jpg"
+      bottomImage:"/images/t&d-services2.jpg"
     },
     {
       title: "Your C&A",
