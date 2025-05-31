@@ -44,7 +44,7 @@ const Navbar = () => {
               <div key={link.name} className="cursor-pointer">
                 <Link
                   href={link.path}
-                  className="text-gray-700 dark:text-gray-300 hover:text-[#8cc63e] transition duration-300 font-medium"
+                  className="text-gray-700 dark:text-gray-300 hover:text-[#8cc63e] transition duration-300 font-semibold"
                 >
                   {link.name}
                 </Link>

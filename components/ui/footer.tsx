@@ -1,7 +1,16 @@
 "use client";
 import Link from "next/link";
 import { RotateWords } from "./rotate-words";
-import { IconBrandFacebook, IconBrandInstagram, IconBrandX, IconDeviceLandlinePhone, IconDeviceMobile, IconMail, IconMapPin } from '@tabler/icons-react';
+import {
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+  IconBrandX,
+  IconDeviceLandlinePhone,
+  IconDeviceMobile,
+  IconMail,
+  IconMapPin,
+} from "@tabler/icons-react";
 
 const Footer = () => {
   return (
@@ -28,14 +37,14 @@ const Footer = () => {
             <div className="md:ml-14">
               <h4 className="font-medium mb-2">Content</h4>
               <ul className="space-y-2 text-sm">
-                {/* <li>
+                <li>
                   <Link
-                    href="/despre"
+                    href="/"
                     className="hover:text-[#8cc63e] dark:hover:text-green-400 transition duration-300"
                   >
-                    Despre noi
+                    Home
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link
                     href="/services"
@@ -79,11 +88,17 @@ const Footer = () => {
                   <span>Sector 4, București</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <IconDeviceLandlinePhone stroke={2} className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
+                  <IconDeviceLandlinePhone
+                    stroke={2}
+                    className="w-5 h-5 text-[#8cc63e] dark:text-green-400"
+                  />
                   <span>+40 21 330 30 12</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <IconDeviceMobile stroke={2} className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
+                  <IconDeviceMobile
+                    stroke={2}
+                    className="w-5 h-5 text-[#8cc63e] dark:text-green-400"
+                  />
                   <span> +40 7272 UBEON</span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -99,12 +114,21 @@ const Footer = () => {
                   <IconBrandInstagram className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
                   <span>ubeon</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <IconBrandFacebook className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
-                  <span>ubeon</span>
+                <li>
+                  <Link
+                    href="https://www.facebook.com/profile.php?id=100069772204107"
+                    className="flex items-center gap-2"
+                  >
+                    <IconBrandFacebook className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
+                    <span>ubeon</span>
+                  </Link>
                 </li>
                 <li className="flex items-center gap-2">
                   <IconBrandX className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
+                  <span>ubeon</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <IconBrandLinkedin className="w-5 h-5 text-[#8cc63e] dark:text-green-400" />
                   <span>ubeon</span>
                 </li>
               </ul>
