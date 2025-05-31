@@ -47,9 +47,9 @@ export default function Home() {
 
   // Array of images for each carousel
   const carouselImages = [
-    ["/images/1.png", "/images/1.png", "/images/1.png"],
-    ["/images/1.png", "/images/1.png", "/images/1.png"],
-    ["/images/1.png", "/images/1.png", "/images/1.png"],
+    ["/images/home-1.jpg", "/images/home-2.jpg", "/images/home-3.jpg"],
+    ["/images/home-2.jpg", "/images/home-3.jpg", "/images/home-1.jpg"],
+    ["/images/home-3.jpg", "/images/home-1.jpg", "/images/home-2.jpg"],
   ];
 
   const [currentIndexes, setCurrentIndexes] = useState([0, 0, 0]);
