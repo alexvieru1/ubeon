@@ -53,67 +53,88 @@ const page = () => {
       <Navbar />
       <div className="pt-16 flex flex-col justify-center items-center p-4">
         <div className="max-w-4xl w-full">
-          <Card className="mt-8">
+          <Card>
             <CardTitle className="p-4 text-3xl text-red-500">
               Your EPO
             </CardTitle>
-            <CardDescription className="p-4 text-xl">
-              Event Planner & Organizer
+            <CardDescription className="px-4 text-xl">
+              Event Planner &amp; Organizer
             </CardDescription>
+
             <CardContent className="p-4">
-              <div className="flex flex-col gap-4">
-                <div className="flex-shrink-0">
+              {/* ─── HEADER IMAGES ─────────────────────────────────────── */}
+              <div className="flex flex-col sm:flex-row gap-6">
+                {/* Logo */}
+                <div className="relative w-full sm:w-1/2 h-48">
                   <Image
-                    className="rounded-lg"
                     src="/images/red.png"
-                    alt="Your EPO"
-                    width={500}
-                    height={300}
+                    fill
+                    alt="ubeon logo"
+                    className="object-contain rounded-lg"
+                    priority
                   />
                 </div>
-                <div className="text-lg">
-                  <p>
-                    Suntem dedicați fiecărui eveniment pe care îl organizăm sau
-                    planificăm. Vei avea un agent dedicat care va fi cu tine pas
-                    cu pas și care va face din eveniment nu doar o reușită, ci o
-                    amintire memorabilă. Luăm de la bun început în considerare
-                    toate aspectele legate de evenimentul tău pentru ca nimic să
-                    nu rămână la voia întâmplării.
-                  </p>
-                  <p className="mt-4">
-                    <em>The Wow Element!</em> Nu trebuie să ai un buget înainte
-                    de a avea un prim contact cu <em>Your EPO</em> de la Ubeon.
-                    Vino cu evenimentul tău! De buget ne ocupăm împreună!
-                  </p>
-                  <p className="mt-4">
-                    Toate dorințele legate de evenimentul tău vor avea soluție.
-                  </p>
-                  <p className="mt-4">
-                    Evenimentul tău este: Conferință, Congres, Competiție
-                    sportivă, Petrecere privată, Petrecere pentru copii,
-                    Petrecere pentru adulți, Majorat, Căsătorie civilă,
-                    Căsătorie religioasă, Aniversare, Celebrare a unei
-                    realizări, Petrecere corporativă, Petrecere de firmă,
-                    Lansare de produs, Lansare de carte, Concert, Spectacol,
-                    Gală, Prezentare de modă, Organizare platou de filmare în
-                    afara studiourilor - Indoor sau Outdoor, Sărbători populare
-                    sau tradiționale locale, Zilele urbei, Zilele comunei, Târg,
-                    Festival?
-                  </p>
-                  <p className="mt-4">
-                    Pentru oricare din această listă avem un <em>Your EPO</em> pregătit. Tipul
-                    evenimentului tău nu se regăsește în această enumerare?
-                    Acceptăm provocarea. Sună acum și spune-ne despre ce este
-                    vorba! Cu siguranță așteptările tale vor fi depășite.
-                  </p>
+
+                {/* Meeting photo */}
+                <div className="relative w-full sm:w-1/2 h-48">
+                  <Image
+                    src="/images/epo-more.jpg"
+                    fill
+                    alt="Event planning meeting"
+                    className="object-cover rounded-lg"
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                  />
                 </div>
               </div>
+
+              {/* ─── BODY TEXT ─────────────────────────────────────────── */}
+              <div className="mt-6 space-y-4 text-lg">
+                <p>
+                  Suntem dedicați fiecărui eveniment pe care îl organizăm sau
+                  planificăm. Vei avea un agent dedicat care va fi cu tine pas
+                  cu pas și care va face din eveniment nu doar o reușită, ci o
+                  amintire memorabilă. Luăm de la bun început în considerare
+                  toate aspectele legate de evenimentul tău pentru ca nimic să
+                  nu rămână la voia întâmplării.
+                </p>
+
+                <p>
+                  <em>The Wow Element!</em> Nu trebuie să ai un buget înainte de
+                  a avea un prim contact cu <em>Your EPO</em> de la Ubeon. Vino
+                  cu evenimentul tău! De buget ne ocupăm împreună!
+                </p>
+
+                <p>
+                  Toate dorințele legate de evenimentul tău vor avea soluție.
+                </p>
+
+                <p>
+                  Evenimentul tău este: Conferință, Congres, Competiție
+                  sportivă, Petrecere privată, Petrecere pentru copii, Petrecere
+                  pentru adulți, Majorat, Căsătorie civilă, Căsătorie
+                  religioasă, Aniversare, Celebrare a unei realizări, Petrecere
+                  corporativă, Petrecere de firmă, Lansare de produs, Lansare de
+                  carte, Concert, Spectacol, Gală, Prezentare de modă,
+                  Organizare platou de filmare în afara studiourilor – indoor
+                  sau outdoor, Sărbători populare sau tradiționale locale,
+                  Zilele urbei, Zilele comunei, Târg, Festival?
+                </p>
+
+                <p>
+                  Pentru oricare din această listă avem un <em>Your EPO</em>{" "}
+                  pregătit. Tipul evenimentului tău nu se regăsește în această
+                  enumerare? Acceptăm provocarea. Sună acum și spune-ne despre
+                  ce este vorba! Cu siguranță așteptările tale vor fi depășite.
+                </p>
+              </div>
             </CardContent>
-            <CardFooter className="flex justify-center p-4 gap-4">
+
+            {/* ─── FOOTER BUTTONS ──────────────────────────────────────── */}
+            <CardFooter className="flex justify-center gap-4 p-4">
               <Link href="/contact">
                 <Button className="bg-red-500 text-white">Contact us</Button>
               </Link>
-              <Link href="https://wa.me/40722567212" target="blank">
+              <Link href="https://wa.me/40722567212" target="_blank">
                 <Button className="bg-red-500 text-white">
                   Get Fast Access
                 </Button>

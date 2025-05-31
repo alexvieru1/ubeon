@@ -53,84 +53,111 @@ const page = () => {
         <div className="max-w-4xl w-full">
           <Card className="mt-8">
             <CardTitle className="p-4 text-3xl text-orange-500">
-              Your T&amp;D
+              Your&nbsp;T&amp;D
             </CardTitle>
-            <CardDescription className="p-4 text-xl">
-              Training &amp; Development
+            <CardDescription className="px-4 text-xl">
+              Training&nbsp;&amp;&nbsp;Development
             </CardDescription>
+
             <CardContent className="p-4">
-              <div className="flex flex-col gap-4">
-                <div className="flex-shrink-0">
+              {/* ─── Header images (logo + hero) ───────────────────── */}
+              <div className="flex flex-col sm:flex-row gap-6">
+                {/* logo */}
+                <div className="relative w-full sm:w-1/2 h-48">
                   <Image
-                    className="rounded-lg"
                     src="/images/orange.png"
-                    alt="Your T&D"
-                    width={500}
-                    height={300}
+                    fill
+                    alt="Your T&D logo"
+                    className="object-contain rounded-lg"
+                    priority
                   />
                 </div>
-                <div className="text-lg">
-                  <p>
-                    Aducem trainingul profesionist și programele de dezvoltare
-                    personală acolo unde ai nevoie de ele.
-                  </p>
-                  <p className="mt-4">
-                    Fie că este vorba de un training specific sau general îți
-                    oferim soluții moderne si tehnici super prietenoase, astfel
-                    încât abilitățile și competențele vizate să fie transferate
-                    efectiv și utilizate imediat de către absolvenții
-                    programelor de pregătire profesională și dezvoltare
-                    personală.
-                  </p>
-                  <p className="mt-4">
-                    Monitorizarea rezultatelor post training? Desigur, rămâne în
-                    grija noastră și poate face obiectul unei discuții cu{" "}
-                    <em>Your C&A</em> de la Ubeon.
-                  </p>
-                  <p className="mt-4">
-                    Susținem peste 100 de cursuri acreditate sau neacreditate:
-                    de calificare, de specializare sau de perfecționare din care
-                    poți alege. La nevoie creăm și/sau acredităm cursul 101
-                    pentru a putea susține nevoia ta sau a companiei.
-                  </p>
-                  <p className="mt-4">
-                    Putem fi oriunde, ca rezultat al parteneriatelor noastre cu
-                    peste 50 de furnizori de formare din întreaga țară și
-                    Republica Moldova.
-                  </p>
-                  <p className="mt-4">
-                    Enumeram aici o parte din cele 100 de cursuri pe care le
-                    putem susține: Formator, Referent Resurse Umane, Specialist
-                    în Activitatea de Coaching, Consilier pentru Dezvoltare
-                    Personală, Administrator Pensiune Turistică, Antreprenoriat,
-                    Antreprenoriat Social, Competențe Digitale, Manager
-                    Societate Comercială, Manager Resurse Umane, Manager de
-                    Produs, Manager de Inovare, Organizator Evenimente, Bucătar,
-                    Cofetar, Barman, Lucrător Comercial, Cameristă, Ofițer
-                    Prelucrare Date cu Caracter Personal, Șef Bucătar, Șef de
-                    Sala, Șef de Restaurant, Specialist HACCP.
-                  </p>
-                  <p className="mt-4">
-                    La cerere putem susține orice Refresh Training în domeniu
-                    tău de activitate, Workshop-uri tematice pentru dezvoltare
-                    personală sau activități de tip Team Building.
-                  </p>
-                  <p className="mt-4">
-                    Vei avea la dispoziție un super specialist in Training si
-                    Dezvoltare, <em>Your T&D</em> de la Ubeon! Împreună cu
-                    acesta se vor stabili toate detaliile pentru cursul sau
-                    trainingul de care ai nevoie.
-                  </p>
+
+                {/* hero photo — change the file if you have a better one */}
+                <div className="relative w-full sm:w-1/2 h-48">
+                  <Image
+                    src="/images/t&d-more.jpg"
+                    fill
+                    alt="Training session"
+                    className="object-cover rounded-lg"
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                  />
                 </div>
               </div>
+
+              {/* ─── Body copy ─────────────────────────────────────── */}
+              <div className="mt-6 space-y-4 text-lg">
+                <p>
+                  Aducem trainingul profesionist și programele de dezvoltare
+                  personală acolo unde ai nevoie de ele.
+                </p>
+
+                <p>
+                  Fie că este vorba de un training specific sau general, îți
+                  oferim soluții moderne și tehnici super prietenoase, astfel
+                  încât abilitățile și competențele vizate să fie transferate
+                  efectiv și utilizate imediat de către absolvenții programelor
+                  de pregătire profesională și dezvoltare personală.
+                </p>
+
+                <p>
+                  Monitorizarea rezultatelor post-training? Desigur, rămâne în
+                  grija noastră și poate face obiectul unei discuții cu&nbsp;
+                  <em>Your&nbsp;C&amp;A</em> de la Ubeon.
+                </p>
+
+                <p>
+                  Susținem peste 100 de cursuri acreditate sau neacreditate – de
+                  calificare, de specializare ori de perfecționare – din care
+                  poți alege. La nevoie creăm și/sau acredităm cursul&nbsp;101
+                  pentru a susține nevoia ta sau a companiei.
+                </p>
+
+                <p>
+                  Putem fi oriunde, ca rezultat al parteneriatelor noastre cu
+                  peste&nbsp;50 de furnizori de formare din întreaga țară și
+                  Republica Moldova.
+                </p>
+
+                <p>
+                  Enumerăm aici o parte din cele 100 de cursuri pe care le putem
+                  susține: Formator, Referent&nbsp;Resurse&nbsp;Umane,
+                  Specialist în Activitatea de Coaching, Consilier
+                  pentru&nbsp;Dezvoltare&nbsp;Personală, Administrator Pensiune
+                  Turistică, Antreprenoriat, Antreprenoriat&nbsp;Social,
+                  Competențe Digitale, Manager Societate Comercială,
+                  Manager&nbsp;Resurse Umane, Manager de Produs, Manager de
+                  Inovare, Organizator&nbsp;Evenimente, Bucătar, Cofetar,
+                  Barman, Lucrător Comercial, Cameristă, Ofițer Prelucrare Date
+                  cu Caracter Personal, Șef&nbsp;Bucătar, Șef&nbsp;de&nbsp;Sală,
+                  Șef&nbsp;de&nbsp;Restaurant, Specialist&nbsp;HACCP.
+                </p>
+
+                <p>
+                  La&nbsp;cerere putem susține orice&nbsp;
+                  <em>Refresh&nbsp;Training</em> în domeniul tău de activitate,
+                  workshop-uri tematice pentru dezvoltare personală sau
+                  activități de tip&nbsp;Team&nbsp;Building.
+                </p>
+
+                <p>
+                  Vei avea la dispoziție un super specialist în&nbsp;Training și
+                  Dezvoltare, <em>Your&nbsp;T&amp;D</em> de la Ubeon! Împreună
+                  cu acesta se vor stabili toate detaliile pentru cursul sau
+                  trainingul de care ai nevoie.
+                </p>
+              </div>
             </CardContent>
-            <CardFooter className="flex justify-center p-4 gap-4">
+
+            <CardFooter className="flex justify-center gap-4 p-4">
               <Link href="/contact">
-                <Button className="bg-orange-500 text-white">Contact us</Button>
-              </Link>
-              <Link href="https://wa.me/40722567212" target="blank">
                 <Button className="bg-orange-500 text-white">
-                  Get Fast Access
+                  Contact&nbsp;us
+                </Button>
+              </Link>
+              <Link href="https://wa.me/40722567212" target="_blank">
+                <Button className="bg-orange-500 text-white">
+                  Get&nbsp;Fast&nbsp;Access
                 </Button>
               </Link>
             </CardFooter>

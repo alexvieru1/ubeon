@@ -53,75 +53,93 @@ const page = () => {
         <div className="max-w-4xl w-full">
           <Card className="mt-8">
             <CardTitle className="p-4 text-3xl text-blue-500">
-              Your C&amp;A
+              Your&nbsp;C&amp;A
             </CardTitle>
-            <CardDescription className="p-4 text-xl">
-              Consultant &amp; Advisor
+            <CardDescription className="px-4 text-xl">
+              Consultant&nbsp;&amp;&nbsp;Advisor
             </CardDescription>
+
             <CardContent className="p-4">
-              <div className="flex flex-col gap-4">
-                <div className="flex-shrink-0">
+              {/* ─── Header images (logo + hero) ───────────────────── */}
+              <div className="flex flex-col sm:flex-row gap-6">
+                {/* logo */}
+                <div className="relative w-full sm:w-1/2 h-48">
                   <Image
-                    className="rounded-lg"
                     src="/images/blue.png"
-                    alt="Your C&A"
-                    width={500}
-                    height={300}
+                    fill
+                    alt="Your C&A logo"
+                    className="object-contain rounded-lg"
+                    priority
                   />
                 </div>
-                <div className="text-lg">
-                  <p>
-                    Managementul și administrarea unei afaceri presupun alocarea
-                    de resurse importante de timp către activități care nu au
-                    directă legătură cu activitatea și afacerea ta. Este vorba
-                    de cele mai multe ori de obligațiile legale ce trebuie
-                    asumate de fiecare antreprenor pentru gestionarea propriei
-                    afaceri.
-                  </p>
-                  <p className="mt-4">
-                    Da, suntem și noi de acord că perspectiva birocratică care
-                    impune aceste activități auxiliare are efecte directe asupra
-                    productivității, randamentului, atenției la detalii,
-                    atenției față de client, asupra profitului, etc., mai ales
-                    în cazul unor afaceri mici care nu beneficiază de
-                    organigramă extinsă care să permită angajarea directă de
-                    oameni dedicați acestor aspecte administrative.
-                  </p>
-                  <p className="mt-4">
-                    De aceea, Ubeon, folosindu-se de experiența sa de peste 20
-                    de ani și de strânsele relații cu specialiști și experți, te
-                    ajută să susții aceste nevoi într-o manieră în care punem în
-                    prim-plan înțelegerea necesităților și salvarea timpului
-                    necesar proceselor de business direct. Pentru toate
-                    perspectivele birocratice ale afacerii tale, Ubeon este
-                    capabil să iți ofere susținere dedicată, consultanță directă
-                    și servicii concrete cu care să poți răspunde obligațiilor
-                    de natură legală specifice afacerii tale.
-                  </p>
-                  <p className="mt-4">
-                    <em>Your C&A</em> poate fi un expert specialist în
-                    Legislație, Contabilitate, Relații de muncă,
-                    Sustenabilitate, Integrare, Mediu, Accesare fonduri,
-                    Sănătate și securitate în muncă, Situații de urgență,
-                    Medicina muncii, Asigurări, Siguranță alimentară,
-                    Monitorizare procese interne, Responsabilitate socială,
-                    Etică, Dezvoltare, Creditare, Audit, Imobiliare, Evaluare,
-                    etc. Daca specialistul de care ai nevoie nu este în această
-                    listă vom face tot ce putem ca să îl găsim pentru tine.
-                  </p>
-                  <p className="mt-4">
-                    <em>Your C&A</em> de la Ubeon va fi întotdeauna parte din soluție.
-                  </p>
+
+                {/* hero photo — change the file if you have a better one */}
+                <div className="relative w-full sm:w-1/2 h-48">
+                  <Image
+                    src="/images/c&a-more.jpg"
+                    fill
+                    alt="Business consulting"
+                    className="object-cover rounded-lg"
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                  />
                 </div>
               </div>
+
+              {/* ─── Body copy ─────────────────────────────────────── */}
+              <div className="mt-6 space-y-4 text-lg">
+                <p>
+                  Managementul și administrarea unei afaceri presupun alocarea
+                  de resurse importante de timp către activități care nu au
+                  legătură directă cu obiectul tău principal. Cel mai des vorbim
+                  despre obligații legale pe care fiecare antreprenor trebuie să
+                  le gestioneze.
+                </p>
+
+                <p>
+                  Da, suntem și noi de acord că perspectiva birocratică impusă
+                  de aceste activități auxiliare impactează productivitatea,
+                  randamentul, atenția la detalii și, implicit, profitul – cu
+                  atât mai mult în cazul micilor afaceri care nu au o
+                  organigramă extinsă.
+                </p>
+
+                <p>
+                  De aceea, Ubeon, cu peste&nbsp;20 de ani de experiență și o
+                  rețea puternică de specialiști, te ajută să acoperi aceste
+                  nevoi punând pe primul loc înțelegerea necesităților și
+                  economisirea timpului dedicat
+                  proceselor&nbsp;de&nbsp;business. Pentru orice cerință
+                  birocratică, Ubeon îți oferă consultanță directă și servicii
+                  concrete.
+                </p>
+
+                <p>
+                  <em>Your&nbsp;C&amp;A</em> poate fi expert în: Legislație,
+                  Contabilitate, Relații de&nbsp;muncă, Sustenabilitate,
+                  Integrare, Mediu, Accesare fonduri, Sănătate
+                  și&nbsp;securitate în muncă, Situații de&nbsp;urgență,
+                  Medicina muncii, Asigurări, Siguranță alimentară, Monitorizare
+                  procese interne, Responsabilitate socială, Etică, Dezvoltare,
+                  Creditare, Audit, Imobiliare, Evaluare, etc. Dacă specialistul
+                  de care ai nevoie nu este în listă, îl găsim noi.
+                </p>
+
+                <p>
+                  <em>Your&nbsp;C&amp;A</em> de la Ubeon va fi întotdeauna parte
+                  din soluție.
+                </p>
+              </div>
             </CardContent>
-            <CardFooter className="flex justify-center p-4 gap-4">
+
+            <CardFooter className="flex justify-center gap-4 p-4">
               <Link href="/contact">
-                <Button className="bg-blue-500 text-white">Contact us</Button>
-              </Link>
-              <Link href="https://wa.me/40722567212" target="blank">
                 <Button className="bg-blue-500 text-white">
-                  Get Fast Access
+                  Contact&nbsp;us
+                </Button>
+              </Link>
+              <Link href="https://wa.me/40722567212" target="_blank">
+                <Button className="bg-blue-500 text-white">
+                  Get&nbsp;Fast&nbsp;Access
                 </Button>
               </Link>
             </CardFooter>
