@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 // import { ModeToggle } from "./mode-toggle";
 import { RotateWords } from "./ui/rotate-words";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -31,8 +32,11 @@ const Navbar = () => {
               aria-label="you be on"
               className="text-3xl font-sans font-semibold"
             >
-              <RotateWords text="" words={words}/>
+              <RotateWords text="" words={words} />
             </Link>
+          </div>
+          <div className="flex justify-center items-center mr-3">
+            <Image src="/images/sigla.jpg" width={40} height={40} alt="sigla" />
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

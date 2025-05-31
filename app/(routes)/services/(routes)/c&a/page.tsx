@@ -74,7 +74,7 @@ const page = () => {
                 </div>
 
                 {/* hero photo — change the file if you have a better one */}
-                <div className="relative w-full sm:w-1/2 h-48">
+                <div className="relative w-full sm:w-1/2 h-48 md:mt-[-60px]">
                   <Image
                     src="/images/c&a-more.jpg"
                     fill
@@ -86,7 +86,7 @@ const page = () => {
               </div>
 
               {/* ─── Body copy ─────────────────────────────────────── */}
-              <div className="mt-6 space-y-4 text-lg">
+              <div className="mt-8 md:mt-0 space-y-4 text-lg">
                 <p>
                   Managementul și administrarea unei afaceri presupun alocarea
                   de resurse importante de timp către activități care nu au

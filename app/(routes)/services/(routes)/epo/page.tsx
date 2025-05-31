@@ -76,7 +76,7 @@ const page = () => {
                 </div>
 
                 {/* Meeting photo */}
-                <div className="relative w-full sm:w-1/2 h-48">
+                <div className="relative w-full sm:w-1/2 h-48 md:mt-[-60px]">
                   <Image
                     src="/images/epo-more.jpg"
                     fill
@@ -88,7 +88,7 @@ const page = () => {
               </div>
 
               {/* ─── BODY TEXT ─────────────────────────────────────────── */}
-              <div className="mt-6 space-y-4 text-lg">
+              <div className="mt-8 md:mt-0 space-y-4 text-lg">
                 <p>
                   Suntem dedicați fiecărui eveniment pe care îl organizăm sau
                   planificăm. Vei avea un agent dedicat care va fi cu tine pas
