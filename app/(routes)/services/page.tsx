@@ -101,7 +101,7 @@ const page = () => {
           poate și trebuie să fie transferată acolo unde este nevoie.
         </>,
         <>
-          Așadar, <em>Your C&A</em> îti va oferi timpul său și tot ce cunoaște
+          Așadar, <em>Your C&A</em> îți va oferi timpul său și tot ce cunoaște
           în sfera sa de expertiză, pentru ca tu să te bucuri cu adevărat de un
           consultant și îndrumător de încredere.
         </>,
