@@ -4,7 +4,12 @@
 import Navbar from "@/components/navbar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 import Footer from "@/components/ui/footer";
 import { MailIcon, MapPinIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
@@ -206,7 +211,11 @@ export default function Home() {
                 oriunde este nevoie, fiind cei mai buni sau făcând echipă cu cei
                 mai buni. Am învățat în cei 20 de ani de existență că numai așa
                 putem livra dincolo de așteptările clienților și partenerilor
-                noștrii.
+                noștri.
+              </p>
+              <p className="font-bold">
+                Accesează și descoperă cum poți să faci din Your EPO, Your T&D,
+                Your C&A partenerul de care ai nevoie!{" "}
               </p>
             </div>
           </CardContent>
@@ -218,6 +227,10 @@ export default function Home() {
             <CardTitle className="p-4 text-xl text-center xl:text-2xl text-[#8cc63e]">
               Excellent services
             </CardTitle>
+            <CardDescription className="p-4 text-center font-semibold">
+              Accesează și descoperă cum poți să faci din Your EPO, Your T&D,
+              Your C&A partenerul de care ai nevoie!
+            </CardDescription>
             <CardContent className="md:py-4">
               {services.map((service) => (
                 <div
