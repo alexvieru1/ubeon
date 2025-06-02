@@ -64,7 +64,7 @@ const page = () => {
           într-o echipă.
         </>,
         <>
-          Provocările tehnologice actuale ne arată că fară o abordare corectă la
+          Provocările tehnologice actuale ne arată că fără o abordare corectă la
           acest capitol, riscurile de insucces sunt ridicate.
         </>,
         <>
@@ -99,7 +99,7 @@ const page = () => {
       href: "/services/c&a",
       details: [
         <>
-          Toată experința și expertiza noastră acumulată in peste 20 de ani
+          Toată experința și expertiza noastră acumulată în peste 20 de ani
           poate și trebuie să fie transferată acolo unde este nevoie.
         </>,
         <>
@@ -110,7 +110,7 @@ const page = () => {
         <>
           Domenii precum: Legislație, Contabilitate, Relații de muncă, Siguranță
           alimentară, Sustenabilitate, Integrare, Accesare fonduri și granturi,
-          Sănatate și securitate în muncă, Situații de urgență, Medicina muncii,
+          Sănătate și securitate în muncă, Situații de urgență, Medicina muncii,
           Asigurări sunt acele puncte fierbinți ale afacerii tale. De unele ești
           conștient, altele îți sunt impuse. Da, știm și mai știm că fără ele
           afacerea ta nu poate merge bine.
